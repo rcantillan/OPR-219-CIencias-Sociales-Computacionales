@@ -1,0 +1,3 @@
+## Mental health
+
+Being a university student is stressful and can negatively impact mental health. The University Counseling and Testing Center provides confidential, free counseling and crisis intervention services to eligible USA students and consultation and outreach services to members of the USA community. More information can be found [at their website](https://www.southalabama.edu/departments/counseling/ "Counseling and Testing").
