@@ -224,5 +224,6 @@ Al finalizar el curso, los estudiantes habrán desarrollado una comprensión pro
 - Imai, K., & Williams, N. W. (2022). Quantitative Social Science: An Introduction in Tidyverse. Princeton University Press.
 - Edelmann, A., Wolff, T., Montagne, D., & Bail, C. A. (2020). Computational Social Science and Sociology. Annual Review of Sociology, 46(1), 61–81. [https://doi.org/10.1146/annurev-soc-121919-054621](https://doi.org/10.1146/annurev-soc-121919-054621)
 - Buyalskaya, A., Gallo, M., & Camerer, C. F. (2021). The golden age of social science. Proceedings of the National Academy of Sciences, 118(5), e2002923118. [https://doi.org/10.1073/pnas.2002923118](https://doi.org/10.1073/pnas.2002923118)
+- Lazer, D., Pentland, A., Adamic, L., Aral, S., Barabási, A.-L., Brewer, D., Christakis, N., Contractor, N., Fowler, J., Gutmann, M., Jebara, T., King, G., Macy, M., Roy, D., & Van Alstyne, M. (2009). Computational Social Science. Science, 323(5915), 721–723. [https://doi.org/10.1126/science.1167742](https://doi.org/10.1126/science.1167742)
 - Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for data science. O'Reilly Media, Inc. Versión en español: R para ciencia de datos: [https://es.r4ds.hadley.nz/](https://es.r4ds.hadley.nz/)
 - Wickham, H. (2019). Advanced r. CRC press. (link a versión on line de libre acceso [https://adv-r.hadley.nz/](https://
