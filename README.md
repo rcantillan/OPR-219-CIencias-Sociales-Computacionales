@@ -9,5 +9,7 @@ Esta actividad curricular tiene como objetivo evaluar el impacto de los avances 
 
 A través de esta actividad, los participantes explorarán la intersección entre la metodología clásica de las ciencias sociales y las oportunidades y desafíos que presentan las tecnologías digitales emergentes en el campo de la investigación. El enfoque del curso, guiado por la obra de Salganik, proporcionará a los estudiantes una perspectiva actualizada y práctica sobre cómo navegar el panorama cambiante de la investigación social en la era digital.
 
+Acá pueden revisar el [programa del curso](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/rcantillan/OPR-219-CIencias-Sociales-Computacionales/main/programa/programa.pdf)
+
 ### Bibliografía principal
 Salganik, M. J. (2018). Bit by Bit: Social Research in the Digital Age. Princeton University Press. https://www.bitbybitbook.com/
