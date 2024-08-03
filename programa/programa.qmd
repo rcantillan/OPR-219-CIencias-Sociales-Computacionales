@@ -216,7 +216,7 @@ Al finalizar el curso, los estudiantes habrán desarrollado una comprensión pro
 
 ## Básica Obligatoria
 
-- Salganik, Matthew J. (2017). Bit by Bit: Social Research in the Digital Age. Princeton, NJ: Princeton University Press. Open review edition.
+- Salganik, Matthew J. (2017). Bit by Bit: Social Research in the Digital Age. Princeton, NJ: Princeton University Press. Open review edition. Versión online [https://www.bitbybitbook.com/](https://www.bitbybitbook.com/).
 - Ismay, C., & Kim, A. Y.-S. (2020). Statistical inference via data science: A ModernDive into R and the Tidyverse. CRC Press / Taylor & Francis Group. (versión gitbook de libre acceso: [https://moderndive.com/](https://moderndive.com/))
 
 ## Complementaria
