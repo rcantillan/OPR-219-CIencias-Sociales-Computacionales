@@ -1,3 +1,0 @@
-## Writing center
-
-Over the course of this semester, seek help at the Writing Center if you would like additional guidance and critique. You can access the Writing Center at [at their website](https://www.southalabama.edu/departments/academicsuccess/cae/how.it.works.html). During graduate school, I found workshops and writing groups at the Writing Center on campus to be helpful in building my motivation and teaching me new strategies for writing efficiently.

@@ -12,19 +12,18 @@ format:
     fig-caption: true
     template: svm-latex-syllabus.tex
 
-title: "OPR319: Introducción a la Ciencia de Datos Aplicada con RStudio"
+title: "OPR219: Introducción a las Ciencias Sociales Computacionales"
 author: 
   - name: "Roberto Cantillan"
     email: "ricantillan@uc.cl"
-  - name: "Pablo Jiménez"
-    email: "pjimenez@ucm.cl"
 date: "Segundo Semestre, 2024"
 
 officehours: "[Horario de oficina]"
 office: "[Número de oficina]"
 classroom: "[Sala de clases]"
 classhours: "[Horario de clases]"
-web: "https://github.com/rcantillan/OPR319-Ciencia-de-datos-con-R"
+email: "ricantillan@uc.cl"
+web: "https://github.com/rcantillan/OPR-219-CIencias-Sociales-Computacionales"
 ---
 
 ```{r setup, include=FALSE}
@@ -43,208 +42,186 @@ advdate <- function(obj, adv) {
 
 # Identificación de la Actividad Curricular
 
--   **Nombre**: Ciencia de Datos Aplicada con RStudio
--   **Código**: OPR 319 (Equivalente a SLG-522)
--   **Semestre lectivo**: X
--   **Horas**: Presencial: 54 \| Autónomas: 96 \| TOTAL: 150
--   **Créditos SCT**: 5
--   **Duración**: Semestral
--   **Modalidad**: Presencial
--   **Área de Formación**: Profesional
--   **Requisito**: Todas las actividades curriculares aprobadas hasta el VIII semestre
+- **Nombre**: Introducción a las Ciencias Sociales Computacionales
+- **Código**: OPR 219 (Equivalente a SLG-521)
+- **Semestre lectivo**: X
+- **Horas**: Presencial: 54 | Autónomas: 96 | TOTAL: 150
+- **Créditos SCT**: 5
+- **Duración**: Semestral
+- **Modalidad**: Presencial
+- **Área de Formación**: Profesional
+- **Requisito**: Todas las actividades curriculares aprobadas hasta el VIII semestre
 
 # Descripción y Caracterización de la Actividad Curricular
 
-La actividad curricular de Electivo III (Ciencia de datos aplicada) se ubica en el X semestre de la carrera de Sociología y pertenece al área de formación profesional.
+La actividad curricular de Electivo II Ciencias Sociales Computacionales se ubica en el X semestre de la carrera de Sociología y pertenece al área de formación profesional.
 
-En la era actual de big data, la capacidad de analizar datos y extraer información valiosa se ha convertido en una habilidad esencial para los científicos sociales y profesionales en diversos campos. En este contexto, el propósito fundamental de este curso es introducir a los estudiantes en las herramientas básicas para extraer información valiosa a partir de datos sin procesar, a menudo generados fuera de los tradicionales diseños de investigación científica. Esta habilidad es crucial no solo para la investigación académica, sino también para la toma de decisiones informadas en el sector público y privado.
+En la era actual, caracterizada por la abundancia de datos digitales y nuevas herramientas computacionales, las ciencias sociales se encuentran en un punto de inflexión que ofrece oportunidades sin precedentes para el estudio del comportamiento social. Este curso tiene como propósito central explorar y evaluar el impacto transformador de los avances tecnológicos en la investigación social, con un enfoque particular en la transición de métodos analógicos a digitales. 
 
-El curso busca establecer una base sólida para el dominio de las herramientas necesarias en Ciencia de Datos, utilizando R y Tidyverse, un conjunto de software estadístico de código abierto ampliamente reconocido en la investigación tanto académica como aplicada. Se abordarán cada etapa del proceso de manipulación y análisis de datos, incluyendo importación, limpieza, transformación, validación, visualización, modelado y creación de informes automáticos y reproducibles.
+Durante el curso, realizaremos una revisión exhaustiva de las principales oportunidades y ventajas que se abren en la era digital para quienes estudian el comportamiento social. Esto incluirá un análisis detallado de las nuevas fuentes de datos y métodos, como el análisis de texto a gran escala, el estudio de contenidos multimedia, y la exploración de datos de redes sociales. Examinaremos cómo estas nuevas fuentes de datos y métodos están cambiando no solo las respuestas que podemos obtener, sino también las preguntas que podemos formular en las ciencias sociales. Un componente clave del curso será el ejercicio de imaginar y formular problemas sustantivos a partir de datos producidos digitalmente. Este enfoque nos permitirá explorar cómo los conceptos tradicionales de diseño de investigación en las ciencias sociales pueden aplicarse y adaptarse para analizar estas nuevas fuentes de datos. Al mismo tiempo, consideraremos cómo estas nuevas fuentes de datos pueden requerir una reevaluación y adaptación de nuestros enfoques tradicionales de diseño de investigación. El curso también abordará los desafíos éticos y metodológicos que surgen con el uso de big data y métodos computacionales en las ciencias sociales. Discutiremos temas como la privacidad, el consentimiento informado en la era digital, y las implicaciones de la brecha digital en la representatividad de nuestros datos y resultados.
 
-La programación en R, utilizando la interfaz de RStudio, es un componente central de este curso. Aprender a programar no solo permite a los estudiantes realizar análisis de datos más eficientes y reproducibles, sino que también desarrolla habilidades de pensamiento lógico y resolución de problemas que son valiosas en cualquier campo profesional. Además, el dominio de R y RStudio proporciona a los estudiantes herramientas poderosas y flexibles que son ampliamente utilizadas tanto en la academia como en la industria.
+La metodología de enseñanza-aprendizaje incluirá clases expositivas, revisión de material bibliográfico, aplicación de técnicas de Design Thinking, y un enfoque de Aprendizaje Basado en Proyectos. La evaluación se basará en la elaboración de un proyecto de investigación, cuyos avances se presentarán mediante informes escritos y exposiciones orales. Además, se incorporarán elementos de coevaluación y autoevaluación para fomentar la reflexión crítica sobre el propio proceso de aprendizaje.
 
-Al finalizar el curso, los estudiantes serán capaces de:
+Este curso requiere un compromiso activo por parte de los estudiantes. En su tiempo autónomo, deberán realizar lecturas, participar en trabajos colaborativos, y buscar de forma independiente ejemplos de investigación en el área que complementen los presentados en clase y que puedan ser útiles para el desarrollo de su proyecto.
 
-1.  Analizar bases de datos de complejidad intermedia a avanzada.
-2.  Ejecutar tareas de programación para procesamiento de datos, relacionando niveles de estratificación con fenómenos sociales sustantivos.
-3.  Modelar con bases de datos simples y complejas, relacionando resultados con fenómenos sociales sustantivos.
-4.  Comunicar resultados de análisis mediante la creación de informes automatizados y reproducibles.
-
-Estas habilidades no solo mejorarán la capacidad de los estudiantes para realizar investigaciones rigurosas, sino que también aumentarán significativamente su competitividad en el mercado laboral, donde la demanda de profesionales con habilidades en análisis de datos está en constante crecimiento.
+Al finalizar el curso, los estudiantes habrán desarrollado una comprensión profunda de cómo la revolución digital está transformando las ciencias sociales, y estarán equipados con las habilidades necesarias para aprovechar estas nuevas oportunidades en su futura carrera profesional o académica.
 
 # Competencias del Perfil de Egreso Asociadas a la Actividad Curricular
 
 ## Competencias Profesionales
 
-1.  Gestionar organizaciones, proyectos e intervenciones orientándose al trabajo colaborativo y con apertura a la diversidad social.
-    -   1.3. Gestionar proyectos e intervenciones sociales, promoviendo el trabajo en equipo interdisciplinar y colaborativo.
-2.  Proponer iniciativas pertinentes a las demandas y necesidades de entidades diversas, en base a una comprensión integral de los fenómenos y los contextos sociales.
-    -   2.3. Proponer iniciativas pertinentes, relacionando críticamente conceptos y teorías contemporáneas de la sociología y las ciencias sociales.
+1. Gestionar organizaciones, proyectos e intervenciones orientándose al trabajo colaborativo y con apertura a la diversidad social.
+   - 1.3. Gestionar proyectos e intervenciones sociales, promoviendo el trabajo en equipo interdisciplinar y colaborativo.
+
+2. Proponer iniciativas pertinentes a las demandas y necesidades de entidades diversas, en base a una comprensión integral de los fenómenos y los contextos sociales.
+   - 2.3. Proponer iniciativas pertinentes, relacionando críticamente conceptos y teorías contemporáneas de la sociología y las ciencias sociales.
 
 ## Competencias Genéricas
 
-5.  Realizar investigaciones que contribuyan al desarrollo del conocimiento científico y aplicado en contextos propios de su proceso formativo.
-    -   5.3. Desarrollar investigación aplicada, implementando los pasos del método científico y articulando conclusiones adecuadas y coherentes al proceso investigativo.
+5. Realizar investigaciones que contribuyan al desarrollo del conocimiento científico y aplicado en contextos propios de su proceso formativo.
+   - 5.3. Desarrollar investigación aplicada, implementando los pasos del método científico y articulando conclusiones adecuadas y coherentes al proceso investigativo.
 
 # Resultados de Aprendizaje - Aprendizajes Esperados
 
-1.  Ejecutar tareas de programación para procesamiento de datos relacionando niveles de estratificación con fenómenos sociales sustantivos.
-2.  Modelar con bases de datos simples y complejas, relacionando resultados con fenómenos sociales sustantivos.
-3.  Comunicar resultados de análisis mediante la creación de informes automatizados y reproducibles.
+1. Analizar las ventajas y obstáculos que presenta la era digital en el contexto de la investigación social, considerando aspectos de ética científica y las implicaciones metodológicas del uso de big data.
+2. Diseñar propuestas de investigación aplicada integrando conceptos de las ciencias sociales y la ciencia de datos, promoviendo el trabajo colaborativo y aprovechando las nuevas fuentes de datos digitales.
+3. Aplicar métodos computacionales para el análisis de datos digitales, incluyendo análisis de texto, redes sociales y contenido multimedia.
+4. Evaluar críticamente las implicaciones éticas y sociales del uso de métodos computacionales y big data en la investigación social.
 
 # Unidades de Aprendizaje y Ejes Temáticos
 
-## `r advdate(inicio_semestre, 1)`: Introducción a R y RStudio
+## `r advdate(inicio_semestre, 1)`: Introducción a las Ciencias Sociales Computacionales
 
--   Instalación de R y RStudio
--   Interfaz de RStudio
--   Conceptos básicos de R: objetos, funciones, paquetes
--   Tipos de datos en R: numéricos, caracteres, lógicos, factores
--   Operaciones aritméticas y lógicas
--   Vectores y matrices
+- Trayectoria y evolución de las ciencias sociales computacionales
+- Oportunidades y desafíos de la revolución digital en las ciencias sociales
+- Nuevas preguntas y métodos en la era del big data
 
-## `r advdate(inicio_semestre, 2)`: Jueves 15 feriado
+## `r advdate(inicio_semestre, 2)`: Jueves 15 de Agosto - Feriado (Asunción de la Virgen)
 
-## `r advdate(inicio_semestre, 3)`: Operaciones Básicas y Estructuras de Datos
+- No hay clases
 
--   Operaciones aritméticas y lógicas
--   Vectores y matrices
--   Listas y data frames
--   Indexación y subconjuntos
+## `r advdate(inicio_semestre, 3)`: Fundamentos de Datos Digitales y Métodos Computacionales
 
-## `r advdate(inicio_semestre, 4)`: Importación y Exportación de Datos
+- Tipos de datos digitales: textuales, de red, geoespaciales, de comportamiento
+- Introducción a R y RStudio para ciencias sociales
+- Principios de programación y manipulación de datos
 
--   Lectura de archivos CSV, Excel, y otros formatos
--   Escritura de datos en diferentes formatos
--   Conexión con bases de datos
+## `r advdate(inicio_semestre, 4)`: Diseño de Investigación en la Era Digital I
 
-## `r advdate(inicio_semestre, 5)`: Introducción a `Tidyverse`
+- Adaptación de métodos tradicionales al contexto digital
+- Estrategias de muestreo y representatividad en datos digitales
+- Ética en la investigación con datos digitales
 
--   Filosofía de `Tidyverse`
--   Pipes (%\>%) y su uso
--   Introducción a `dplyr`: `select()`, `filter()`, `mutate()`
+## `r advdate(inicio_semestre, 5)`: Diseño de Investigación en la Era Digital II
 
-## `r advdate(inicio_semestre, 6)`: Manipulación de Datos con `dplyr` I
+- Experimentos en línea y A/B testing
+- Encuestas digitales y nuevas formas de recolección de datos
+- Métodos de colaboración masiva y ciencia ciudadana
 
--   Agrupación y resumen de datos: `group_by()` y `summarize()`
--   Ordenamiento de datos: `arrange()`
--   Creación de nuevas variables (avanzado): `mutate()`, `case_when()`
+## `r advdate(inicio_semestre, 6)`: Análisis de Texto y Procesamiento del Lenguaje Natural
 
-## `r advdate(inicio_semestre, 7)`: Feriado Fiestas Patrias
+- Técnicas básicas de procesamiento de texto
+- Análisis de sentimientos y clasificación de textos
+- Topic modeling y análisis de contenido a gran escala
 
-## `r advdate(inicio_semestre, 8)`: Manipulación de Datos con `dplyr` II
+## `r advdate(inicio_semestre, 7)`: Semana del 18 de Septiembre - Feriado (Fiestas Patrias)
 
--   Joins: `inner_join()`, `left_join()`, etc.
--   Operaciones de conjunto: `union()`, `intersect()`, `setdiff()`
--   Manejo de datos faltantes
+- No hay clases
 
-## `r advdate(inicio_semestre, 9)`: Transformación de Datos con `tidyr`
+## `r advdate(inicio_semestre, 8)`: Análisis de Redes Sociales
 
--   Datos tidy y su importancia
--   Funciones `pivot_longer()` y `pivot_wider()`
--   Separación y unión de columnas: `separate()` y `unite()`
+- Conceptos fundamentales de análisis de redes
+- Visualización y métricas de redes sociales
+- Difusión de información y comportamientos en redes
 
-## `r advdate(inicio_semestre, 10)`: Iteración y Automatización con `purrr`
+## `r advdate(inicio_semestre, 9)`: Aprendizaje Automático para Ciencias Sociales
 
--   Conceptos de programación funcional
--   Familia de funciones `map()`
--   Uso de `purrr` con `dplyr`
+- Introducción al aprendizaje supervisado y no supervisado
+- Aplicaciones en predicción y clasificación de fenómenos sociales
+- Interpretación y validación de modelos de machine learning
 
-## `r advdate(inicio_semestre, 11)`: Visualización de Datos I: Fundamentos de `ggplot2`
+## `r advdate(inicio_semestre, 10)`: Visualización de Datos y Comunicación de Resultados
 
--   Gramática de gráficos
--   Capas en `ggplot2`
--   Tipos básicos de gráficos: dispersión, líneas, barras
+- Principios de visualización efectiva de datos
+- Herramientas y técnicas para la creación de visualizaciones interactivas
+- Narrativa de datos y presentación de resultados de investigación
 
-## `r advdate(inicio_semestre, 12)`: Visualización de Datos II: `ggplot2` Avanzado
+## `r advdate(inicio_semestre, 11)`: Ética y Responsabilidad en las Ciencias Sociales Computacionales
 
--   Faceting
--   Temas y personalización de gráficos
--   Combinación de múltiples gráficos
+- Privacidad y protección de datos en la investigación digital
+- Sesgo algorítmico y equidad en el análisis computacional
+- Implicaciones sociales y políticas del big data en las ciencias sociales
 
-## `r advdate(inicio_semestre, 13)`: Feriado 
+## `r advdate(inicio_semestre, 12)`: Proyecto de Investigación - Desarrollo
 
-## `r advdate(inicio_semestre, 14)`: Introducción al Modelado Estadístico
+- Definición de temas de investigación
+- Formación de equipos y planificación de proyectos
+- Asesorías y trabajo guiado en los proyectos
 
--   Regresión lineal con `lm()`
--   Interpretación de resultados
--   Diagnósticos básicos de modelos
+## `r advdate(inicio_semestre, 13)`: Viernes 1 de Noviembre - Feriado (Día de Todos los Santos)
 
-## `r advdate(inicio_semestre, 15)`: Modelos Avanzados con `tidymodels`
+- No hay clases
 
--   Introducción a `tidymodels`
--   Preprocesamiento de datos
--   Entrenamiento y evaluación de modelos
+## `r advdate(inicio_semestre, 14)`: Proyecto de Investigación - Continuación
 
-## `r advdate(inicio_semestre, 16)`: Reportes Automatizados I: Introducción a `RMarkdown`
+- Trabajo en equipo sobre propuestas de investigación
+- Asesorías individuales
 
--   Sintaxis básica de `Markdown`
--   Chunks de `R` en `RMarkdown`
--   Generación de reportes en diferentes formatos (PDF, HTML)
+## `r advdate(inicio_semestre, 15)`: Presentaciones de Avance
 
-## `r advdate(inicio_semestre, 17)`: Reportes Automatizados II: `Quarto`
+- Exposiciones orales de los avances de proyectos
+- Retroalimentación grupal
 
--   Parámetros en `Quarto`
--   Creación de presentaciones con `Quarto`
--   Introducción a `Quarto`
+## `r advdate(inicio_semestre, 16)`: Proyecto de Investigación - Finalización
 
-## `r advdate(inicio_semestre, 18)`: Proyecto Final - Trabajo en Clase
+- Incorporación de retroalimentación
+- Preparación de informes finales
 
--   Sesión de trabajo guiado para el proyecto final
--   Consultas y asesorías individuales
+## `r advdate(inicio_semestre, 17)`: Presentaciones Finales
 
-## `r advdate(inicio_semestre, 19)`: Proyecto Final - Presentaciones
-
--   Presentación de proyectos finales por parte de los estudiantes
--   Retroalimentación y discusión
-
+- Exposiciones orales de los proyectos finales
+- Evaluación y cierre del curso
 
 # Estrategias de Enseñanza y Aprendizaje
 
--   Clases expositivas dialogadas
--   Aprendizaje Basado en Problemas
--   Aprendizaje Colaborativo o Cooperativo
--   Talleres
--   Trabajo en laboratorio de computación
+- Clases expositivas dialogadas
+- Aprendizaje Basado en Proyectos
+- Design Thinking
+- Talleres prácticos de programación y análisis de datos
+- Discusiones grupales y debates éticos
+- Tutorías y asesorías individuales para proyectos
 
 # Procedimientos de Evaluación de Aprendizajes
 
-1.  Tarea de programación I (35%)
-    -   Instrumento: Rúbrica e Informe (Escala de apreciación)
-    -   Contenidos: Importación y exportación, agrupación y resumen de datos y manipulación de datos de datos con `dplyr`,  manipulación de datos II (unión), transformación de datos (`tidyr`), manejo de datos faltantes. 
-    
-2.  Tarea de programación II (35%)
-    -   Instrumento: Rúbrica y Diagrama de flujo (Pauta de cotejo)
-    -   Contenidos: Iteración y automatización (`purrr`), creación de gráficas (`ggplot`). 
-    
-3.  Tarea de programación III (30%)
-    -   Instrumento: Rúbrica y Autoevaluación de proceso (Pauta de cotejo)
-    -   Contenidos: Modelado estadístico con `tidymodels` (procesamiento y uso de resultados), reportes con `Quarto`.
-    
+1. Informe I y Exposición oral (30%)
+   - Instrumento: Rúbrica e Informe (Escala de apreciación)
+   - Contenidos: Ventajas y obstáculos de la era digital en la investigación social, fundamentación de técnicas de ciencias sociales computacionales, aspectos éticos.
+
+2. Informe de avance II, Informe de avance III y Autoevaluación de proceso (40%)
+   - Instrumento: Rúbrica y Autoevaluación de proceso (Rúbrica)
+   - Contenidos: Construcción de objeto de estudio, definición de estrategia de investigación, trabajo colaborativo.
+
+3. Proyecto Final y Presentación (30%)
+   - Instrumento: Rúbrica de evaluación de proyecto y presentación
+   - Contenidos: Aplicación de métodos computacionales, análisis de datos digitales, interpretación de resultados, consideraciones éticas.
 
 # Recursos de Infraestructura
 
--   Sala de clases con proyector y audio
--   Sala de clases con computadores con R y RStudio instalado
--   Acceso a UCM Virtual (Plataforma Web LMS)
+- Sala de clases con proyector y audio
+- Laboratorio de computación con R y RStudio instalado
+- Acceso a UCM Virtual (Plataforma Web LMS)
+- Acceso a bases de datos y repositorios de datos abiertos
 
 # Recursos Bibliográficos
 
 ## Básica Obligatoria
 
--   Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for data science. O'Reilly Media, Inc. Versión en español: R para ciencia de datos: https://es.r4ds.hadley.nz/
--   Ismay, C., & Kim, A. Y.-S. (2020). Statistical inference via data science: A ModernDive into R and the Tidyverse. CRC Press / Taylor & Francis Group. (versión gitbook de libre acceso: https://moderndive.com/)
+- Salganik, Matthew J. (2017). Bit by Bit: Social Research in the Digital Age. Princeton, NJ: Princeton University Press. Open review edition.
+- Ismay, C., & Kim, A. Y.-S. (2020). Statistical inference via data science: A ModernDive into R and the Tidyverse. CRC Press / Taylor & Francis Group. (versión gitbook de libre acceso: [https://moderndive.com/](https://moderndive.com/))
 
 ## Complementaria
 
--   Imai, K., & Williams, N. W. (2022). Quantitative Social Science: An Introduction in Tidyverse. Princeton University Press.
--   Wickham, H. (2019). Advanced r. CRC press. (link a versión on line de libre acceso https://adv-r.hadley.nz/)
-
-# Otros Recursos
-
--   UCM Virtual (Plataforma Web LMS)
--   Artículos científicos (Digital)
--   Repositorio SciELO (Página Web)
--   SIBIB (Página Web)
--   Repositorio GitHub (Página Web)
--   Base de datos de acceso público (Página Web de distintas organizaciones)
+- Imai, K., & Williams, N. W. (2022). Quantitative Social Science: An Introduction in Tidyverse. Princeton University Press.
+- Edelmann, A., Wolff, T., Montagne, D., & Bail, C. A. (2020). Computational Social Science and Sociology. Annual Review of Sociology, 46(1), 61–81. [https://doi.org/10.1146/annurev-soc-121919-054621](https://doi.org/10.1146/annurev-soc-121919-054621)
+- Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for data science. O'Reilly Media, Inc. Versión en español: R para ciencia de datos: [https://es.r4ds.hadley.nz/](https://es.r4ds.hadley.nz/)
+- Wickham, H. (2019). Advanced r. CRC press. (link a versión on line de libre acceso [https://adv-r.hadley.nz/](https://
