@@ -11,6 +11,22 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}} 
 \usepackage{longtable,booktabs}
 
+\usepackage[many]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+% Definición de colores personalizados de Quarto
+\definecolor{quarto-callout-note-color-frame}{HTML}{00758A}
+\definecolor{quarto-callout-important-color-frame}{HTML}{D41159}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{FD8D3C}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{00A087}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{D41159}
+\definecolor{quarto-callout-note-color}{HTML}{00758A}
+\definecolor{quarto-callout-important-color}{HTML}{D41159}
+\definecolor{quarto-callout-warning-color}{HTML}{FD8D3C}
+\definecolor{quarto-callout-tip-color}{HTML}{00A087}
+\definecolor{quarto-callout-caution-color}{HTML}{D41159}
+
 \usepackage{parskip}
 \usepackage{titlesec}
 \titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}
@@ -32,10 +48,6 @@ Computacionales},
 \usepackage{titling}
 \setlength{\droptitle}{-.25cm}
 
-%\setlength{\parindent}{0pt}
-%\setlength{\parskip}{6pt plus 2pt minus 1pt}
-%\setlength{\emergencystretch}{3em}  % prevent overfull lines 
-
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
@@ -47,7 +59,7 @@ Computacionales},
 \lhead{}
 \chead{}
 \rhead{\footnotesize OPR219: Introducción a las Ciencias Sociales
-Computacionales -- 2024-01-01}
+Computacionales -- \today}
 \lfoot{}
 \cfoot{\small \thepage/\pageref*{LastPage}}
 \rfoot{}
@@ -58,14 +70,6 @@ Computacionales -- 2024-01-01}
    \fancyhf{}
    \fancyfoot[C]{\small \thepage/\pageref*{LastPage}}
 }
-
-%\def\labelitemi{--}
-%\usepackage{enumitem}
-%\setitemize[0]{leftmargin=25pt}
-%\setenumerate[0]{leftmargin=25pt}
-
-
-
 
 \makeatletter
 \@ifpackageloaded{hyperref}{}{%
@@ -96,7 +100,6 @@ Computacionales},
             pdfborder={0 0 0}}
 \urlstyle{same}  % don't use monospace font for urls
 
-
 \setcounter{secnumdepth}{0}
 
 \usepackage{longtable}
@@ -113,38 +116,27 @@ Computacionales},
 \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
 
 
-
 \usepackage{setspace}
 
 \title{OPR219: Introducción a las Ciencias Sociales Computacionales}
 \author{Roberto Cantillan}
-\date{2024-01-01}
-
+\date{\today}
 
 \begin{document}  
 
-		\maketitle
-		
-	
-		\thispagestyle{firststyle}
+\maketitle
 
-%	\thispagestyle{empty}
+\thispagestyle{firststyle}
 
-
-	\noindent \begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} lr @{\extracolsep{\fill}}}
-
-
+\noindent \begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} lr @{\extracolsep{\fill}}}
 E-mail: \texttt{ricantillan@uc.cl} & Web: Repositorio \href{https://github.com/rcantillan/OPR-219-CIencias-Sociales-Computacionales}{link}\\
-Office Hours: {[}Horario de oficina{]}  &  Class Hours: {[}Horario de
-clases{]}\\
-Office: {[}Número de oficina{]}  & Class Room: {[}Sala de clases{]}\\
-	&  \\
-	\hline
-	\end{tabular*}
-	
-\vspace{2mm}
-	
+Office Hours: Por determinar  &  Class Hours: 10:50 - 14:14\\
+Office: Por determinar  & Class Room: J300\\
+  &  \\
+\hline
+\end{tabular*}
 
+\vspace{2mm}
 
 \hypertarget{identificaciuxf3n-de-la-actividad-curricular}{%
 \section{Identificación de la Actividad
@@ -272,7 +264,6 @@ Profesionales}\label{competencias-profesionales}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
 \tightlist
 \item
   Realizar investigaciones que contribuyan al desarrollo del
@@ -282,7 +273,7 @@ Profesionales}\label{competencias-profesionales}}
   \begin{itemize}
   \tightlist
   \item
-    5.3. Desarrollar investigación aplicada, implementando los pasos del
+    1.1. Desarrollar investigación aplicada, implementando los pasos del
     método científico y articulando conclusiones adecuadas y coherentes
     al proceso investigativo.
   \end{itemize}
@@ -568,49 +559,155 @@ Aprendizaje}\label{estrategias-de-enseuxf1anza-y-aprendizaje}}
   Tutorías y asesorías individuales para proyectos
 \end{itemize}
 
-\hypertarget{procedimientos-de-evaluaciuxf3n-de-aprendizajes}{%
-\section{Procedimientos de Evaluación de
-Aprendizajes}\label{procedimientos-de-evaluaciuxf3n-de-aprendizajes}}
+\hypertarget{evaluaciuxf3n}{%
+\section{Evaluación}\label{evaluaciuxf3n}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+\hypertarget{propuesta-de-investigaciuxf3n-inicial-y-presentaciuxf3n-30}{%
+\subsection{Propuesta de Investigación Inicial y Presentación
+(30\%)}\label{propuesta-de-investigaciuxf3n-inicial-y-presentaciuxf3n-30}}
+
+\hypertarget{instrumento}{%
+\subsubsection{Instrumento}\label{instrumento}}
+
+Rúbrica e Informe (Escala de apreciación)
+
+\hypertarget{contenidos-y-ponderaciuxf3n}{%
+\subsubsection{Contenidos y
+Ponderación}\label{contenidos-y-ponderaciuxf3n}}
+
+\begin{itemize}
 \tightlist
 \item
-  Informe I y Exposición oral (30\%)
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Instrumento: Rúbrica e Informe (Escala de apreciación)
-  \item
-    Contenidos: Ventajas y obstáculos de la era digital en la
-    investigación social, fundamentación de técnicas de ciencias
-    sociales computacionales, aspectos éticos.
-  \end{itemize}
+  Identificación y justificación del problema de investigación (25\%)
 \item
-  Informe de avance II, Informe de avance III y Autoevaluación de
-  proceso (40\%)
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Instrumento: Rúbrica y Autoevaluación de proceso (Rúbrica)
-  \item
-    Contenidos: Construcción de objeto de estudio, definición de
-    estrategia de investigación, trabajo colaborativo.
-  \end{itemize}
+  Revisión preliminar de literatura relevante (25\%)
 \item
-  Proyecto Final y Presentación (30\%)
+  Formulación de preguntas de investigación innovadoras (30\%)
+\item
+  Consideración de aspectos éticos en la investigación social
+  computacional (20\%)
+\end{itemize}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    Instrumento: Rúbrica de evaluación de proyecto y presentación
-  \item
-    Contenidos: Aplicación de métodos computacionales, análisis de datos
-    digitales, interpretación de resultados, consideraciones éticas.
-  \end{itemize}
-\end{enumerate}
+\hypertarget{formato}{%
+\subsubsection{Formato}\label{formato}}
+
+\begin{itemize}
+\tightlist
+\item
+  Informe escrito (máximo 2000 palabras)
+\item
+  Presentación oral (10 minutos)
+\end{itemize}
+
+\hypertarget{diseuxf1o-metodoluxf3gico-y-estrategia-de-recolecciuxf3n-de-datos-40}{%
+\subsection{Diseño Metodológico y Estrategia de Recolección de Datos
+(40\%)}\label{diseuxf1o-metodoluxf3gico-y-estrategia-de-recolecciuxf3n-de-datos-40}}
+
+\hypertarget{instrumento-1}{%
+\subsubsection{Instrumento}\label{instrumento-1}}
+
+Rúbrica y Autoevaluación de proceso
+
+\hypertarget{contenidos-y-ponderaciuxf3n-1}{%
+\subsubsection{Contenidos y
+Ponderación}\label{contenidos-y-ponderaciuxf3n-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Propuesta metodológica innovadora (30\%)
+\item
+  Identificación y justificación de fuentes de datos diversas (25\%)
+\item
+  Estrategia de recolección y procesamiento de datos (25\%)
+\item
+  Consideraciones éticas y de privacidad en la recolección de datos
+  (20\%)
+\end{itemize}
+
+\hypertarget{formato-1}{%
+\subsubsection{Formato}\label{formato-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Informe de avance (máximo 2500 palabras)
+\item
+  Sesión de retroalimentación grupal
+\end{itemize}
+
+\hypertarget{proyecto-final-diseuxf1o-completo-de-investigaciuxf3n-30}{%
+\subsection{Proyecto Final: Diseño Completo de Investigación
+(30\%)}\label{proyecto-final-diseuxf1o-completo-de-investigaciuxf3n-30}}
+
+\hypertarget{instrumento-2}{%
+\subsubsection{Instrumento}\label{instrumento-2}}
+
+Rúbrica de evaluación de proyecto y presentación
+
+\hypertarget{contenidos-y-ponderaciuxf3n-2}{%
+\subsubsection{Contenidos y
+Ponderación}\label{contenidos-y-ponderaciuxf3n-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  Refinamiento de preguntas de investigación y justificación teórica
+  (20\%)
+\item
+  Diseño metodológico detallado (25\%)
+\item
+  Plan de análisis de datos (25\%)
+\item
+  Discusión de limitaciones y consideraciones éticas (15\%)
+\item
+  Propuesta de difusión y aplicación de resultados (15\%)
+\end{itemize}
+
+\hypertarget{formato-2}{%
+\subsubsection{Formato}\label{formato-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  Informe final (máximo 4000 palabras)
+\item
+  Presentación (15 minutos)
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics{programa_files/figure-pdf/unnamed-chunk-1-1.pdf}
+
+}
+
+\caption{Distribución de la evaluación del curso}
+
+\end{figure}
+
+\hypertarget{notas-adicionales}{%
+\section{Notas Adicionales}\label{notas-adicionales}}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, leftrule=.75mm, bottomrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, coltitle=black, opacityback=0, toprule=.15mm, titlerule=0mm, breakable, rightrule=.15mm, colframe=quarto-callout-note-color-frame, left=2mm, colbacktitle=quarto-callout-note-color!10!white, toptitle=1mm, opacitybacktitle=0.6, bottomtitle=1mm, colback=white]
+
+\begin{itemize}
+\tightlist
+\item
+  Se incentiva el pensamiento creativo y la propuesta de métodos
+  innovadores que combinen diferentes fuentes de datos.
+\item
+  La evaluación se centrará en la calidad del diseño de investigación
+  más que en la aplicación práctica.
+\item
+  Se valorará especialmente la justificación teórica sólida y la
+  alineación entre las preguntas de investigación y la metodología
+  propuesta.
+\item
+  Los estudiantes deben considerar fuentes de datos no convencionales y
+  explicar cómo las utilizarían en un escenario ideal.
+\end{itemize}
+
+\end{tcolorbox}
 
 \hypertarget{recursos-de-infraestructura}{%
 \section{Recursos de
@@ -679,19 +776,12 @@ Infraestructura}\label{recursos-de-infraestructura}}
   libre acceso {[}https://adv-r.hadley.nz/{]}(https://
 \end{itemize}
 
-
-
-
 \end{document}
 
 \makeatletter
 \def\@maketitle{%
   \newpage
-%  \null
-%  \vskip 2em%
-%  \begin{center}%
   \let \footnote \thanks
     {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
 }
-%\fi
 \makeatother

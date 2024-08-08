@@ -11,17 +11,15 @@ format:
     keep-tex: true
     fig-caption: true
     template: svm-latex-syllabus.tex
-
 title: "OPR219: Introducción a las Ciencias Sociales Computacionales"
 author: 
   - name: "Roberto Cantillan"
     email: "ricantillan@uc.cl"
-date: "Segundo Semestre, 2024"
-
-officehours: "[Horario de oficina]"
-office: "[Número de oficina]"
-classroom: "[Sala de clases]"
-classhours: "[Horario de clases]"
+semester: "Segundo Semestre, 2024"
+officehours: "Por determinar"
+office: "Por determinar"
+classroom: "J300"
+classhours: "10:50 - 14:14"
 email: "ricantillan@uc.cl"
 web: "https://github.com/rcantillan/OPR-219-CIencias-Sociales-Computacionales"
 ---
@@ -78,8 +76,11 @@ Al finalizar el curso, los estudiantes habrán desarrollado una comprensión pro
 
 ## Competencias Genéricas
 
-5. Realizar investigaciones que contribuyan al desarrollo del conocimiento científico y aplicado en contextos propios de su proceso formativo.
-   - 5.3. Desarrollar investigación aplicada, implementando los pasos del método científico y articulando conclusiones adecuadas y coherentes al proceso investigativo.
+1. Realizar investigaciones que contribuyan al desarrollo del conocimiento científico y aplicado en contextos propios de su proceso formativo.
+   - 1.1. Desarrollar investigación aplicada, implementando los pasos del método científico y articulando conclusiones adecuadas y coherentes al proceso investigativo.
+   
+   
+   
 
 # Resultados de Aprendizaje - Aprendizajes Esperados
 
@@ -191,19 +192,92 @@ Al finalizar el curso, los estudiantes habrán desarrollado una comprensión pro
 - Discusiones grupales y debates éticos
 - Tutorías y asesorías individuales para proyectos
 
-# Procedimientos de Evaluación de Aprendizajes
 
-1. Informe I y Exposición oral (30%)
-   - Instrumento: Rúbrica e Informe (Escala de apreciación)
-   - Contenidos: Ventajas y obstáculos de la era digital en la investigación social, fundamentación de técnicas de ciencias sociales computacionales, aspectos éticos.
+# Evaluación
+## Propuesta de Investigación Inicial y Presentación (30%)
 
-2. Informe de avance II, Informe de avance III y Autoevaluación de proceso (40%)
-   - Instrumento: Rúbrica y Autoevaluación de proceso (Rúbrica)
-   - Contenidos: Construcción de objeto de estudio, definición de estrategia de investigación, trabajo colaborativo.
+### Instrumento
+Rúbrica e Informe (Escala de apreciación)
 
-3. Proyecto Final y Presentación (30%)
-   - Instrumento: Rúbrica de evaluación de proyecto y presentación
-   - Contenidos: Aplicación de métodos computacionales, análisis de datos digitales, interpretación de resultados, consideraciones éticas.
+### Contenidos y Ponderación
+- Identificación y justificación del problema de investigación (25%)
+- Revisión preliminar de literatura relevante (25%)
+- Formulación de preguntas de investigación innovadoras (30%)
+- Consideración de aspectos éticos en la investigación social computacional (20%)
+
+### Formato
+- Informe escrito (máximo 2000 palabras)
+- Presentación oral (10 minutos)
+
+## Diseño Metodológico y Estrategia de Recolección de Datos (40%)
+
+### Instrumento
+Rúbrica y Autoevaluación de proceso
+
+### Contenidos y Ponderación
+- Propuesta metodológica innovadora (30%)
+- Identificación y justificación de fuentes de datos diversas (25%)
+- Estrategia de recolección y procesamiento de datos (25%)
+- Consideraciones éticas y de privacidad en la recolección de datos (20%)
+
+### Formato
+- Informe de avance (máximo 2500 palabras)
+- Sesión de retroalimentación grupal
+
+## Proyecto Final: Diseño Completo de Investigación (30%)
+
+### Instrumento
+Rúbrica de evaluación de proyecto y presentación
+
+### Contenidos y Ponderación
+- Refinamiento de preguntas de investigación y justificación teórica (20%)
+- Diseño metodológico detallado (25%)
+- Plan de análisis de datos (25%)
+- Discusión de limitaciones y consideraciones éticas (15%)
+- Propuesta de difusión y aplicación de resultados (15%)
+
+### Formato
+- Informe final (máximo 4000 palabras)
+- Presentación (15 minutos)
+
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-cap: "Distribución de la evaluación del curso"
+#| fig-width: 6
+#| fig-height: 4
+
+library(ggplot2)
+
+data <- data.frame(
+  Evaluacion = c("Propuesta Inicial", "Diseño Metodológico", "Proyecto Final"),
+  Porcentaje = c(30, 40, 30)
+)
+
+ggplot(data, aes(x = "", y = Porcentaje, fill = Evaluacion)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y", start = 0) +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  geom_text(aes(label = paste0(Porcentaje, "%")), 
+            position = position_stack(vjust = 0.5),
+            color = "white") +
+  scale_fill_manual(values = c("Propuesta Inicial" = "#f46036",
+                               "Diseño Metodológico" = "#2e294e",
+                               "Proyecto Final" = "#1b998b"))
+```
+
+
+# Notas Adicionales
+
+::: {.callout-note}
+- Se incentiva el pensamiento creativo y la propuesta de métodos innovadores que combinen diferentes fuentes de datos.
+- La evaluación se centrará en la calidad del diseño de investigación más que en la aplicación práctica.
+- Se valorará especialmente la justificación teórica sólida y la alineación entre las preguntas de investigación y la metodología propuesta.
+- Los estudiantes deben considerar fuentes de datos no convencionales y explicar cómo las utilizarían en un escenario ideal.
+:::
+
 
 # Recursos de Infraestructura
 
