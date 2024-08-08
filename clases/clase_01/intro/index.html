@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introducción a las Ciencias Sociales Computacionales</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Roberto Cantillan Carrasco" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <meta name="description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta name="twitter:title" content="Investigación Social en la era digital"/>
+    <meta name="twitter:description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta name="twitter:url" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro"/>
+    <meta name="twitter:image" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro/ciencias-sociales-computacionales.png"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="ricantillan"/>
+    <meta name="twitter:site" content="ricantillan"/>
+    <meta property="og:title" content="Investigación Social en la era digital"/>
+    <meta property="og:description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta property="og:url" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro"/>
+    <meta property="og:image" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro/ciencias-sociales-computacionales.png"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+
+
+
+
+
+class: left title-slide
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+background-position: left
+
+[remarkjs]: https://github.com/gnab/remark
+[remark-wiki]: https://github.com/gnab/remark/wiki
+[xaringan]: https://slides.yihui.org/xaringan/
+[xaringan-wiki]: https://github.com/yihui/xaringan/wiki
+[xaringanthemer]: https://pkg.garrickadenbuie.com/xaringanthemer
+[xaringanExtra]: https://pkg.garrickadenbuie.com/xaringanExtra
+[metathis]: https://pkg.garrickadenbuie.com/metathis
+[ricantillan]: https://twitter.com/ricantillan
+[rbind]: https://ricantillan.rbind.io
+[rsthemes]: https://www.garrickdenbuie.com/projects/rsthemes
+[regexplain]: https://www.garrickdenbuie.com/projects/regexplain
+[shrtcts]: https://pkg.garricakdenbuie.com/shrtcts
+
+
+## **Introducción a las  &lt;br&gt; Ciencias Sociales &lt;br&gt; Computacionales**
+
+.side-text[
+[&amp;commat;ricantillan][ricantillan] | [rcantillan.rbind.io][rbind]
+]
+
+.title-where[
+Universidad Católica del Maule&lt;br&gt;
+Agosto 08, 2024
+]
+
+&lt;style type="text/css"&gt;
+.title-slide h1 {
+  font-size: 80px;
+  font-family: Jost, sans;
+  color: #6A5ACD;  /* Cambio del color del texto a morado */
+}
+
+.side-text {
+  color: #6A5ACD;  /* Cambio del color del texto lateral a morado */
+  transform: rotate(90deg);
+  position: absolute;
+  font-size: 22px;
+  top: 150px;
+  right: -130px;
+}
+
+.side-text a {
+  color: #6A5ACD;  /* Cambio del color de los enlaces a morado */
+}
+
+.title-where {
+  font-family: Jost, sans;
+  font-size: 25px;
+  position: absolute;
+  bottom: 10px;
+  color: #6A5ACD;  /* Cambio del color del texto de ubicación a morado */
+}
+&lt;/style&gt;
+
+
+
+
+---
+layout: false
+
+# Sobre mi...
+
+.f3[
+&amp;#x1F44B; Hola, Soy **Roberto Cantillan**
+]
+
+--
+
+.f3[
+&amp;#x1F426; [&amp;commat;ricantillan](https://twitter.com/ricantillan)
+]
+
+--
+
+.f3[
+&amp;#x1F9D1;&amp;#x200D;&amp;#x1F4BB; [rcantillan.rbind.io](https://rcantillan.rbind.io)
+]
+
+--
+
+.f3[
+&amp;#x1F4BC; [Sociología, Pontificia Universidad Católica de Chile](https://rstudio.com)
+]
+
+---
+class: middle
+
+# **Temas** 
+
+
+- Big data, límites y oportunidades
+
+--
+
+- Ciencias Sociales Computacionales
+
+--
+
+- Nuevas estrategias de investigación
+
+--
+
+- Ciencias sociales y perspectiva analítica
+
+--
+
+---
+
+class: middle right
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+
+## **Ciencias Sociales computacionales**
+
+
+---
+
+class: middle left
+
+## **Datos y era digital** 
+
+
+- Poder transformador de la era digital: **Enorme  cantidad de datos (cada vez mayor) que se almacenan digitalmente, junto con el crecimiento paralelo en el poder de cómputo**. 
+
+--
+
+- A menudo los datos provienen de **rastros digitales**, resultantes de las acciones cotidianas de las personas.
+
+--
+
+- Los investigadores ahora pueden observar el comportamiento, hacer preguntas, realizar experimentos y colaborar de formas que no eran posibles en el pasado. 
+
+--
+
+- Los investigadores sociales deben combinar los enfoques tradicionales con las capacidades de la era digital.
+
+--
+
+- Comunmente, el "big data" incluye datos de empresas y gobiernos.
+
+---
+
+class: middle left
+
+## **Datos y era digital II**
+
+-  Sin embargo, esto plantea **preocupaciones éticas**, ya que los investigadores ahora pueden **observar y potencialmente dañar a las personas** sin su consentimiento o conocimiento.
+
+--
+
+- Tres estrategias principales de investigación para datos observacionales: **contar cosas, pronosticar cosas y aproximar un experimento**. 
+
+--
+
+- Los investigadores pueden usar datos 1) **listos para usar**, 2) **reutilizando datos** existentes creados por empresas y gobiernos, o 3) **datos personalizados**, generando datos específicamente para sus necesidades de investigación.
+
+---
+class: middle center
+
+&lt;img src="Data_Science_VD.png" width="45%" /&gt;
+
+.footnote[
+[1] http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
+]
+---
+
+class: middle center
+
+
+&lt;img src="screen6.png" width="50%" /&gt;
+
+.footnote[
+[1] Salganik, M. J. (2018). Bit by bit: Social research in the digital age. Princeton University Press. https://www.bitbybitbook.com/
+]
+---
+class: middle left
+
+## **Ciencias Sociales Computacionales** 
+
+- Mezclan ciencias computacionales y ciencias sociales. 
+
+--
+
+- A menudo, involucran cuestiones de éticas y de provacidad consideradas complejas
+
+--
+
+- Combinan **Readymanes and Custommades**
+
+--
+
+- Involucran 5 comnuidades claves: **Ciencias sociales**, **ciencias de datos**, **negocios**, **defensores de la privacidad**, **responsables políticos**. 
+
+---
+class: middle center
+
+&lt;img src="screen12.png" width="50%" /&gt;
+
+.footnote[
+Edelmann, A., Wolff, T., Montagne, D., &amp; Bail, C. A. (2020). Computational Social Science and Sociology. Annual Review of Sociology, 46(1), 61–81. https://doi.org/10.1146/annurev-soc-121919-054621
+]
+
+---
+
+class: middle center 
+
+.w-50.fl[
+### 
+
+&lt;img src="screen13.png" width="100%" /&gt;
+]
+
+.w-50.fr[
+### 
+
+&lt;img src="screen14.png" width="100%" /&gt;
+
+.footnote[
+Edelmann, A., Wolff, T., Montagne, D., &amp; Bail, C. A. (2020). Computational Social Science and Sociology. Annual Review of Sociology, 46(1), 61–81. https://doi.org/10.1146/annurev-soc-121919-054621
+]
+]
+
+
+---
+class: middle right
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+
+
+# **Ejemplos**
+
+
+---
+class: middle right
+
+.w-40.fl[
+### 
+
+&lt;img src="screen1.png" width="100%" /&gt;
+]
+
+.w-40.fr[
+### 
+
+&lt;img src="screen3.png" width="100%" /&gt;
+]
+
+---
+
+class: middle right
+
+.w-40.fl[
+### 
+
+&lt;img src="screen2.png" width="100%" /&gt;
+]
+
+.w-40.fr[
+### 
+
+&lt;img src="screen4.png" width="100%" /&gt;
+]
+
+---
+
+&lt;img src="screen5.png" width="100%" /&gt;
+
+.footnote[
+[1] https://github.com/sna-ses
+
+[2] https://sna-ssla.netlify.app/
+]
+
+---
+class: middle right
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+
+
+# **Big data**
+## **Características fundamentales**
+
+---
+
+class: middle left
+
+# **I. Grandes** 
+
+- Las fuentes de big data no son el objetivo final en sí mismas; se utilizan para lograr objetivos de investigación específicos.
+
+&gt; *Estudio de eventos raros*: grandes conjuntos de datos permiten a los investigadores estudiar eventos raros (sucesos que son poco frecuentes en la población).
+
+--
+
+&gt; *Estudio de la heterogeneidad*: Big data permite la exploración de la heterogeneidad, donde los patrones y las relaciones difieren entre varios grupos o contextos.
+
+--
+
+&gt; *Detección de pequeñas diferencias*: los grandes conjuntos de datos son efectivos para detectar pequeñas diferencias, que pueden ser valiosas para ciertas aplicaciones, como en la industria con fines de marketing.
+
+---
+
+class: middle center
+
+# **II. Always on** 
+
+&lt;img src="screen7.png" width="60%" /&gt;
+
+---
+class: middle center
+
+&lt;img src="screen8.png" width="60%" /&gt;
+
+---
+class: middle left
+
+# **III. No reactividad** 
+
+.w-40.fl[
+### 
+
+- Las fuentes de big data pueden ser no reactivas
+
+- Las personas no saben que sus datos se están registrando, lo que hace que sea menos probable que influya en su comportamiento
+
+- ¿Posibles sesgos? 
+  - *Desirability bias*
+  - *Algorithmic confounding*
+]
+
+.w-40.fr[
+### 
+
+&lt;img src="gif1.gif" width="100%" /&gt;
+]
+
+---
+class: middle left
+
+# **IV. Información faltante**
+
+- los macrodatos pueden carecer de información crucial para la investigación social: 
+
+&gt; datos demográficos
+
+--
+
+&gt; comportamiento en otras plataformas 
+
+--
+
+&gt; datos para operacionalizar construcciones teóricas.
+
+
+---
+class: middle center
+
+&lt;img src="screen9.png" width="80%" /&gt;
+
+.footnote[
+[1] Salganik, M. J. (2018). Bit by bit: Social research in the digital age. Princeton University Press.
+
+]
+---
+class: middle left
+
+# **V. Inaccesibles**
+
+- Los datos en poder de empresas y gobiernos son difíciles de acceder para los investigadores
+
+--
+
+- Existen serias barreras legales, comerciales y éticas que impiden el acceso a los datos. Estas barreras no desaparecerán a medida que la tecnología mejore, porque no son barreras técnicas
+
+--
+
+- Algunos gobiernos nacionales han establecido procedimientos para habilitar el acceso a datos para algunos conjuntos de datos, pero el proceso es especialmente ad-hoc a nivel estatal y local
+
+--
+
+- Los investigadores pueden asociarse con empresas para obtener acceso a los datos, pero esto puede crear una variedad de problemas para los investigadores y las empresas (ej. problemas de reproducibilidad).
+
+
+---
+class: middle left
+
+# **VI. No representatividad**
+
+
+- Los macro datos pueden ser **no representativos** y, en efecto, pueden no ser adecuados para generalizar a toda la población (quien usa twitter?). 
+
+--
+
+- Para preguntas que requieren generalizar los resultados de la muestra a la población de la que se extrajo, este es un problema serio. 
+
+--
+
+- Pero para preguntas sobre comparaciones dentro de la muestra, los datos no representativos pueden ser poderosos (Estudio de John Snow 1853–54 brote de colera en Londres). 
+
+--
+
+- Para esto los investigadores gan claras las características de su muestra y respalden las afirmaciones sobre la transportabilidad con evidencia teórica o empírica. 
+
+---
+class: middle left
+
+# **VII. Cambios (Deriva)**
+
+- Los grandes sistemas de datos pueden cambiar con el tiempo
+
+--
+
+- Esto puede afectar la consistencia y confiabilidad de los datos recopilados.
+
+--
+
+  - deriva de la población (cambio en quién los usa)
+  - deriva de comportamiento (cambio en la forma en que las personas los usan)
+  - deriva del sistema (cambio en el sistema mismo)
+
+
+---
+class: middle left
+
+## **VIII. Algorithmically confounded**
+
+
+.w-50.fl[
+### 
+
+- El comportamiento en los sistemas de macro datos no es natural 
+
+- Esta guiado por el diseño y la ingenieria de los sistemas
+
+- Sesgos de comportamiento que guian el diseño (Homofilia, clausura triádica, etc. &lt;sup&gt;1&lt;/sup&gt;)
+
+]
+
+.w-40.fr[
+### 
+
+&lt;img src="netmovie.gif" width="80%" /&gt;
+]
+
+.footnote[
+[1] https://github.com/statnet
+]
+
+---
+
+# **IX. Sucios**
+
+
+.w-40.fl[
+### 
+
+&lt;img src="tidyr.png" width="100%" /&gt;
+
+]
+
+.w-50.fr[
+### 
+
+- Las fuentes de big data se pueden cargar con basura y spam
+
+- Muchas de estas fuentes de macrodatos nunca fueron pensadas para ser utilizadas para la investigación 
+
+- No se recopilan, almacenan ni documentan de una manera que facilite la limpieza de datos &lt;sup&gt;1&lt;/sup&gt;)
+
+]
+
+.footnote[
+[1] Wickham H, Vaughan D, Girlich M (2023). tidyr: Tidy Messy Data. https://tidyr.tidyverse.org
+]
+
+---
+
+# **X. Sensibles**
+
+
+.w-50.fl[
+### 
+
+- Muchos de los datos que poseen las compañias y los gobiernos son muy sensibles. 
+
+- Ejemplo del premio Netflix &lt;sup&gt;1&lt;/sup&gt;. 
+
+]
+
+.w-40.fr[
+### 
+
+&lt;img src="screen10.png" width="100%" /&gt;
+
+]
+
+.footnote[
+[1] https://www.cs.cornell.edu/~shmat/shmat_oak08netflix.pdf
+]
+
+---
+
+class: middle right
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+
+# **Muchas Gracias**
+### **Esta presentación fue realizada con el paquete  [Xaringan](https://slides.yihui.org/xaringan), diseñado para entorno  [R](https://www.r-project.org/)** 
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true,
+"ratio": "16:9",
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
