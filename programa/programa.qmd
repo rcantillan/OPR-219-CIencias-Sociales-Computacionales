@@ -263,6 +263,7 @@ ggplot(data, aes(x = "", y = Porcentaje, fill = Evaluacion)) +
   geom_text(aes(label = paste0(Porcentaje, "%")), 
             position = position_stack(vjust = 0.5),
             color = "white") +
+  labs(y="") +
   scale_fill_manual(values = c("Propuesta Inicial" = "#f46036",
                                "Diseño Metodológico" = "#2e294e",
                                "Proyecto Final" = "#1b998b"))
