@@ -56,7 +56,11 @@ La actividad curricular de Electivo II Ciencias Sociales Computacionales se ubic
 
 En la era actual, caracterizada por la abundancia de datos digitales y nuevas herramientas computacionales, las ciencias sociales se encuentran en un punto de inflexión que ofrece oportunidades sin precedentes para el estudio del comportamiento social. Este curso tiene como propósito central explorar y evaluar el impacto transformador de los avances tecnológicos en la investigación social, con un enfoque particular en la transición de métodos analógicos a digitales. 
 
-Durante el curso, realizaremos una revisión exhaustiva de las principales oportunidades y ventajas que se abren en la era digital para quienes estudian el comportamiento social. Esto incluirá un análisis detallado de las nuevas fuentes de datos y métodos, como el análisis de texto a gran escala, el estudio de contenidos multimedia, y la exploración de datos de redes sociales. Examinaremos cómo estas nuevas fuentes de datos y métodos están cambiando no solo las respuestas que podemos obtener, sino también las preguntas que podemos formular en las ciencias sociales. Un componente clave del curso será el ejercicio de imaginar y formular problemas sustantivos a partir de datos producidos digitalmente. Este enfoque nos permitirá explorar cómo los conceptos tradicionales de diseño de investigación en las ciencias sociales pueden aplicarse y adaptarse para analizar estas nuevas fuentes de datos. Al mismo tiempo, consideraremos cómo estas nuevas fuentes de datos pueden requerir una reevaluación y adaptación de nuestros enfoques tradicionales de diseño de investigación. El curso también abordará los desafíos éticos y metodológicos que surgen con el uso de big data y métodos computacionales en las ciencias sociales. Discutiremos temas como la privacidad, el consentimiento informado en la era digital, y las implicaciones de la brecha digital en la representatividad de nuestros datos y resultados.
+Durante el curso, realizaremos una revisión exhaustiva de las principales oportunidades y ventajas que se abren en la era digital para quienes estudian el comportamiento social. Esto incluirá un análisis detallado de las nuevas fuentes de datos y métodos, como el análisis de texto a gran escala, el estudio de contenidos multimedia, y la exploración de datos de redes sociales. Examinaremos cómo estas nuevas fuentes de datos y métodos están cambiando no solo las respuestas que podemos obtener, sino también las preguntas que podemos formular en las ciencias sociales.
+
+Un componente clave del curso será el ejercicio de imaginar y formular problemas sustantivos a partir de datos producidos digitalmente. Este enfoque nos permitirá explorar cómo los conceptos tradicionales de diseño de investigación en las ciencias sociales pueden aplicarse y adaptarse para analizar estas nuevas fuentes de datos. Al mismo tiempo, consideraremos cómo estas nuevas fuentes de datos pueden requerir una reevaluación y adaptación de nuestros enfoques tradicionales de diseño de investigación.
+
+El curso también abordará los desafíos éticos y metodológicos que surgen con el uso de big data y métodos computacionales en las ciencias sociales. Discutiremos temas como la privacidad, el consentimiento informado en la era digital, y las implicaciones de la brecha digital en la representatividad de nuestros datos y resultados.
 
 La metodología de enseñanza-aprendizaje incluirá clases expositivas, revisión de material bibliográfico, aplicación de técnicas de Design Thinking, y un enfoque de Aprendizaje Basado en Proyectos. La evaluación se basará en la elaboración de un proyecto de investigación, cuyos avances se presentarán mediante informes escritos y exposiciones orales. Además, se incorporarán elementos de coevaluación y autoevaluación para fomentar la reflexión crítica sobre el propio proceso de aprendizaje.
 
@@ -78,16 +82,13 @@ Al finalizar el curso, los estudiantes habrán desarrollado una comprensión pro
 
 1. Realizar investigaciones que contribuyan al desarrollo del conocimiento científico y aplicado en contextos propios de su proceso formativo.
    - 1.1. Desarrollar investigación aplicada, implementando los pasos del método científico y articulando conclusiones adecuadas y coherentes al proceso investigativo.
-   
-   
-   
 
 # Resultados de Aprendizaje - Aprendizajes Esperados
 
 1. Analizar las ventajas y obstáculos que presenta la era digital en el contexto de la investigación social, considerando aspectos de ética científica y las implicaciones metodológicas del uso de big data.
 2. Diseñar propuestas de investigación aplicada integrando conceptos de las ciencias sociales y la ciencia de datos, promoviendo el trabajo colaborativo y aprovechando las nuevas fuentes de datos digitales.
-3. Aplicar métodos computacionales para el análisis de datos digitales, incluyendo análisis de texto, redes sociales y contenido multimedia.
-4. Evaluar críticamente las implicaciones éticas y sociales del uso de métodos computacionales y big data en la investigación social.
+3. Evaluar críticamente las implicaciones éticas y sociales del uso de métodos computacionales y big data en la investigación social.
+4. Desarrollar habilidades para la formulación de preguntas de investigación innovadoras utilizando datos producidos digitalmente.
 
 # Unidades de Aprendizaje y Ejes Temáticos
 
@@ -101,11 +102,11 @@ Al finalizar el curso, los estudiantes habrán desarrollado una comprensión pro
 
 - No hay clases
 
-## `r advdate(inicio_semestre, 3)`: Fundamentos de Datos Digitales y Métodos Computacionales
+## `r advdate(inicio_semestre, 3)`: Fundamentos de Datos Digitales
 
 - Tipos de datos digitales: textuales, de red, geoespaciales, de comportamiento
-- Introducción a R y RStudio para ciencias sociales
-- Principios de programación y manipulación de datos
+- Características y potencial de los datos digitales en la investigación social
+- Introducción a las fuentes de datos digitales para las ciencias sociales
 
 ## `r advdate(inicio_semestre, 4)`: Diseño de Investigación en la Era Digital I
 
@@ -119,11 +120,11 @@ Al finalizar el curso, los estudiantes habrán desarrollado una comprensión pro
 - Encuestas digitales y nuevas formas de recolección de datos
 - Métodos de colaboración masiva y ciencia ciudadana
 
-## `r advdate(inicio_semestre, 6)`: Análisis de Texto y Procesamiento del Lenguaje Natural
+## `r advdate(inicio_semestre, 6)`: Análisis de Texto y Contenido Digital
 
-- Técnicas básicas de procesamiento de texto
-- Análisis de sentimientos y clasificación de textos
-- Topic modeling y análisis de contenido a gran escala
+- Introducción al análisis de contenido digital
+- Potencial y limitaciones del análisis de texto a gran escala
+- Consideraciones metodológicas en el análisis de contenido en línea
 
 ## `r advdate(inicio_semestre, 7)`: Semana del 18 de Septiembre - Feriado (Fiestas Patrias)
 
@@ -132,20 +133,20 @@ Al finalizar el curso, los estudiantes habrán desarrollado una comprensión pro
 ## `r advdate(inicio_semestre, 8)`: Análisis de Redes Sociales
 
 - Conceptos fundamentales de análisis de redes
-- Visualización y métricas de redes sociales
-- Difusión de información y comportamientos en redes
+- Redes sociales digitales como fuente de datos
+- Implicaciones teóricas y metodológicas del análisis de redes sociales digitales
 
-## `r advdate(inicio_semestre, 9)`: Aprendizaje Automático para Ciencias Sociales
+## `r advdate(inicio_semestre, 9)`: Aprendizaje Automático en Ciencias Sociales
 
-- Introducción al aprendizaje supervisado y no supervisado
-- Aplicaciones en predicción y clasificación de fenómenos sociales
-- Interpretación y validación de modelos de machine learning
+- Introducción conceptual al aprendizaje automático
+- Aplicaciones potenciales en la investigación social
+- Desafíos y consideraciones éticas del uso de IA en ciencias sociales
 
 ## `r advdate(inicio_semestre, 10)`: Visualización de Datos y Comunicación de Resultados
 
 - Principios de visualización efectiva de datos
-- Herramientas y técnicas para la creación de visualizaciones interactivas
 - Narrativa de datos y presentación de resultados de investigación
+- Ética en la visualización y comunicación de datos
 
 ## `r advdate(inicio_semestre, 11)`: Ética y Responsabilidad en las Ciencias Sociales Computacionales
 
@@ -188,12 +189,11 @@ Al finalizar el curso, los estudiantes habrán desarrollado una comprensión pro
 - Clases expositivas dialogadas
 - Aprendizaje Basado en Proyectos
 - Design Thinking
-- Talleres prácticos de programación y análisis de datos
 - Discusiones grupales y debates éticos
 - Tutorías y asesorías individuales para proyectos
 
-
 # Evaluación
+
 ## Propuesta de Investigación Inicial y Presentación (30%)
 
 ### Instrumento
@@ -240,7 +240,6 @@ Rúbrica de evaluación de proyecto y presentación
 - Informe final (máximo 4000 palabras)
 - Presentación (15 minutos)
 
-
 ```{r}
 #| echo: false
 #| warning: false
@@ -268,7 +267,6 @@ ggplot(data, aes(x = "", y = Porcentaje, fill = Evaluacion)) +
                                "Diseño Metodológico" = "#2e294e",
                                "Proyecto Final" = "#1b998b"))
 ```
-
 
 # Notas Adicionales
 
