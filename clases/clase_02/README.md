@@ -4,7 +4,7 @@ subtitle: Introducción a las Ciencas Sociales Computacionales
 date: 2024-08-08
 where: Talca, Chile
 twitter: "@ricantillan"
-web: https://rcantillan.github.io/OPR-219-CIencias-Sociales-Computacionales/clases/clase_01/intro/#1
+web: https://rcantillan.github.io/OPR-219-CIencias-Sociales-Computacionales/clases/clase_02/intro/#1
 ---
 
 ## Packages Used
