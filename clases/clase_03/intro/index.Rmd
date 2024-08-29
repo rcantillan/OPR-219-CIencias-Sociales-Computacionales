@@ -489,6 +489,18 @@ class: middle left
 La investigación social en la era digital requiere una integración cuidadosa de métodos tradicionales y nuevos enfoques digitales. Hofman et al. (2021) argumentan por una integración de explicación y predicción en la ciencia social computacional. Es crucial mantener un fuerte compromiso ético y una atención constante a los problemas de representatividad y sesgo. El futuro de la investigación social dependerá de nuestra capacidad para adaptarnos continuamente a nuevas tecnologías y desafíos éticos.
 ]]
 
+
+---
+class: middle left
+ 
+### Preguntas. 
+
+- 1. ¿Cómo podemos mejorar la integración entre los métodos tradicionales y los nuevos enfoques digitales?
+- 2. ¿Qué nuevas habilidades y competencias necesitarán los científicos sociales del futuro?
+- 3. ¿Cómo podemos garantizar que la investigación social digital sea inclusiva y represente adecuadamente a todas las poblaciones?
+- 4. ¿Cuáles son las implicaciones a largo plazo de la creciente dependencia de los datos digitales en la investigación social?
+
+
 ---
 class: middle left 
 
