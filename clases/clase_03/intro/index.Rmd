@@ -493,12 +493,12 @@ La investigación social en la era digital requiere una integración cuidadosa d
 ---
 class: middle left
  
-### Preguntas. 
+#### **Preguntas.** 
 
-- 1. ¿Cómo podemos mejorar la integración entre los métodos tradicionales y los nuevos enfoques digitales?
-- 2. ¿Qué nuevas habilidades y competencias necesitarán los científicos sociales del futuro?
-- 3. ¿Cómo podemos garantizar que la investigación social digital sea inclusiva y represente adecuadamente a todas las poblaciones?
-- 4. ¿Cuáles son las implicaciones a largo plazo de la creciente dependencia de los datos digitales en la investigación social?
+- ¿Cómo podemos mejorar la integración entre los métodos tradicionales y los nuevos enfoques digitales?
+- ¿Qué nuevas habilidades y competencias necesitarán los científicos sociales del futuro?
+- ¿Cómo podemos garantizar que la investigación social digital sea inclusiva y represente adecuadamente a todas las poblaciones?
+- ¿Cuáles son las implicaciones a largo plazo de la creciente dependencia de los datos digitales en la investigación social?
 
 
 ---
