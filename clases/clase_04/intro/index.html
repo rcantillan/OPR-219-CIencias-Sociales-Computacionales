@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introducción a las Ciencias Sociales Computacionales</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Roberto Cantillan Carrasco" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <meta name="description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta name="twitter:title" content="Investigación Social en la era digital"/>
+    <meta name="twitter:description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta name="twitter:url" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro"/>
+    <meta name="twitter:image" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro/ciencias-sociales-computacionales.png"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="ricantillan"/>
+    <meta name="twitter:site" content="ricantillan"/>
+    <meta property="og:title" content="Investigación Social en la era digital"/>
+    <meta property="og:description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta property="og:url" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro"/>
+    <meta property="og:image" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro/ciencias-sociales-computacionales.png"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+
+
+
+
+
+class: left title-slide
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+background-position: left
+
+[remarkjs]: https://github.com/gnab/remark
+[remark-wiki]: https://github.com/gnab/remark/wiki
+[xaringan]: https://slides.yihui.org/xaringan/
+[xaringan-wiki]: https://github.com/yihui/xaringan/wiki
+[xaringanthemer]: https://pkg.garrickadenbuie.com/xaringanthemer
+[xaringanExtra]: https://pkg.garrickadenbuie.com/xaringanExtra
+[metathis]: https://pkg.garrickadenbuie.com/metathis
+[ricantillan]: https://twitter.com/ricantillan
+[rbind]: https://ricantillan.rbind.io
+[rsthemes]: https://www.garrickdenbuie.com/projects/rsthemes
+[regexplain]: https://www.garrickdenbuie.com/projects/regexplain
+[shrtcts]: https://pkg.garricakdenbuie.com/shrtcts
+
+
+## **Introducción a las Ciencias Sociales &lt;br&gt; Computacionales &lt;br&gt; Clase IV**
+
+.side-text[
+[&amp;commat;ricantillan][ricantillan] | [rcantillan.rbind.io][rbind]
+]
+
+.title-where[
+Universidad Católica del Maule&lt;br&gt;
+Agosto 08, 2024
+]
+
+&lt;style type="text/css"&gt;
+.title-slide h1 {
+  font-size: 80px;
+  font-family: Jost, sans;
+  color: #6A5ACD;  /* Cambio del color del texto a morado */
+}
+
+.side-text {
+  color: #6A5ACD;  /* Cambio del color del texto lateral a morado */
+  transform: rotate(90deg);
+  position: absolute;
+  font-size: 22px;
+  top: 150px;
+  right: -130px;
+}
+
+.side-text a {
+  color: #6A5ACD;  /* Cambio del color de los enlaces a morado */
+}
+
+.title-where {
+  font-family: Jost, sans;
+  font-size: 25px;
+  position: absolute;
+  bottom: 10px;
+  color: #6A5ACD;  /* Cambio del color del texto de ubicación a morado */
+}
+
+/******************
+ * 
+ * Coloured content boxes
+ *
+ ****************/
+
+
+.content-box { 
+    box-sizing: content-box;
+    	background-color: #e2e2e2;
+  /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+     Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+     Content box width: 160px
+     Content box height: 80px */
+}
+
+.content-box-primary,
+.content-box-secondary,
+.content-box-blue,
+.content-box-gray,
+.content-box-grey,
+.content-box-army,
+.content-box-green,
+.content-box-purple,
+.content-box-red,
+.content-box-yellow {
+    /*border-radius: 15px; */
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.content-box-primary {
+	background-color: var(--primary);
+
+}
+
+
+.content-box-secondary {
+	background-color: var(--secondary);
+
+}
+
+.content-box-blue {
+    background-color: #F0F8FF;
+
+}
+
+.content-box-gray {
+    background-color: #e2e2e2;
+}
+
+.content-box-grey {
+	background-color: #F5F5F5;
+}
+
+.content-box-army {
+	background-color: #737a36;
+}
+
+.content-box-green {
+	background-color: #d9edc2;
+}
+
+.content-box-purple {
+	background-color: #e2e2f9;
+}
+
+.content-box-red {
+	background-color: #f9dbdb;
+}
+
+.content-box-yellow {
+	background-color: #fef5c4;
+}
+
+
+.full-width {
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+&lt;/style&gt;
+
+
+
+
+---
+class: middle left 
+
+### **Contenido**
+
+1. Experimentos en línea y A/B testing
+2. Encuestas digitales y nuevas formas de recolección de datos  
+3. Métodos de colaboración masiva y ciencia ciudadana
+
+---
+class: middle left 
+
+## **1. Experimentos en línea y A/B testing**
+
+---
+class: middle left 
+
+### **Experimentos en línea: Oportunidades y desafíos**
+
+- Mayor alcance y diversidad de participantes
+- Costos reducidos y mayor velocidad de implementación
+- Retos: validez externa, atención de participantes, ética digital
+
+---
+class: middle left 
+
+.full-width[.content-box-purple[
+.bolder[**NOTA**]:
+Los experimentos en línea ofrecen nuevas oportunidades para la investigación social, pero también presentan desafíos únicos. Salganik (2019) destaca cómo estos métodos pueden aumentar la escala y eficiencia de la investigación, mientras que plantean nuevas consideraciones éticas y metodológicas.
+]]
+
+
+---
+
+class: middle left 
+
+
+### **A/B testing: Del marketing a la ciencia social**
+
+- Comparación aleatoria de dos variantes
+- Aplicaciones: diseño de políticas, intervenciones sociales, comunicación
+- Ejemplo: Optimización de campañas de participación cívica
+
+
+---
+class: middle left 
+
+.full-width[.content-box-purple[
+.bolder[**NOTA**]:
+El A/B testing, originado en marketing digital, se ha adaptado eficazmente a la investigación social. Kohavi et al. (2020) demuestran cómo esta técnica permite a los investigadores sociales probar rápidamente hipótesis en entornos reales, facilitando la optimización de intervenciones y políticas.
+]]
+
+---
+class: middle left 
+
+### **Caso de estudio: Movilización política en redes sociales**
+
+![](political_experiment.png)
+
+- Bond et al. (2012): 61 millones de usuarios de Facebook
+- Mensaje de "Yo voté" aumentó participación electoral
+- Impacto: directo e indirecto a través de redes sociales
+
+---
+
+class: middle left 
+
+.full-width[.content-box-purple[
+.bolder[**NOTA**]:
+El estudio de Bond et al. (2012) es un ejemplo paradigmático de experimentos a gran escala en redes sociales. Demostró cómo mensajes simples pueden influir en comportamientos offline como el voto, ilustrando el poder de los experimentos digitales para estudiar fenómenos sociales complejos.
+]]
+
+---
+class: middle left 
+
+## **2. Encuestas digitales y nuevas formas de recolección de datos**
+
+---
+class: middle left 
+
+### **Evolución de las encuestas en la era digital**
+
+- De CATI a CAWI: adaptación a nuevos medios
+- Encuestas móviles y en apps: captura de datos en tiempo real
+- Integración con datos pasivos: enriquecimiento de respuestas
+
+---
+
+class: middle left 
+
+.full-width[.content-box-purple[
+.bolder[**NOTA**]:
+La transición de CATI a CAWI y más allá refleja la adaptación de las encuestas al entorno digital. Couper (2017) analiza cómo esta evolución ha transformado la recolección de datos, ofreciendo nuevas oportunidades para la captura de información en tiempo real y la integración con datos pasivos.
+]]
+
+---
+
+class: middle left 
+
+
+### **Innovaciones en diseño de encuestas**
+
+- Gamificación: aumento de engagement y calidad de datos
+- Adaptive questioning: personalización de la experiencia
+- Visual aids y realidad aumentada: mejora de la comprensión
+
+---
+class: middle left 
+
+.full-width[.content-box-purple[
+.bolder[**NOTA**]:
+Las innovaciones en el diseño de encuestas aprovechan las capacidades digitales para mejorar la experiencia del encuestado y la calidad de los datos. Keusch &amp; Zhang (2017) exploran cómo la gamificación y el adaptive questioning pueden aumentar el engagement y la precisión de las respuestas en entornos digitales.
+]]
+
+---
+class: middle left 
+
+### **Desafíos éticos y metodológicos**
+
+- Representatividad en la era del smartphone
+- Privacidad y consentimiento informado digital
+- Calidad de datos: atención, honestidad, y sesgos de auto-selección
+
+---
+class: middle left 
+
+.full-width[.content-box-purple[
+.bolder[**NOTA**]:
+Las nuevas metodologías de encuesta digital presentan desafíos éticos y metodológicos únicos. Kreuter et al. (2020) abordan cómo la era del smartphone afecta la representatividad de las muestras y cómo los investigadores deben adaptar sus prácticas éticas y metodológicas para garantizar la calidad y la integridad de los datos recolectados digitalmente.
+]]
+
+
+---
+class: middle left 
+
+## **3. Métodos de colaboración masiva y ciencia ciudadana**
+
+---
+class: middle left 
+
+
+### **Colaboración masiva en ciencias sociales**
+
+- Crowdsourcing de ideas y soluciones
+- Plataformas de microtareas: MTurk, Prolific
+- Predicción colectiva y mercados de predicción
+
+---
+
+class: middle left 
+
+
+.full-width[.content-box-purple[
+.bolder[**NOTA**]:
+La colaboración masiva ha abierto nuevas fronteras en la investigación social. Kittur et al. (2013) exploran cómo plataformas como MTurk permiten a los investigadores acceder a grandes pools de participantes, mientras que los mercados de predicción aprovechan la "sabiduría de las multitudes" para abordar problemas complejos.
+]]
+
+
+---
+
+class: middle left 
+
+### **Ciencia ciudadana: Democratización de la investigación**
+
+- Participación pública en la recolección y análisis de datos
+- Proyectos: monitoreo ambiental, mapeo comunitario, archivo histórico
+- Beneficios: escala, engagement público, educación científica
+
+
+---
+class: middle left 
+
+.full-width[.content-box-purple[
+.bolder[**NOTA**]:
+La ciencia ciudadana representa una democratización de la investigación científica. Bonney et al. (2016) argumentan que involucrar al público en el proceso científico no solo permite proyectos de gran escala, sino que también fomenta la alfabetización científica y el compromiso público con la ciencia.
+]]
+
+---
+class: middle left 
+
+### **Caso de estudio: Galaxy Zoo**
+
+![](galaxy_zoo.jpg)
+
+- Clasificación de galaxias por voluntarios
+- Más de 40 millones de clasificaciones por 100,000+ personas
+- Descubrimientos inesperados: "Green Pea" galaxies
+
+
+---
+
+class: middle left 
+
+.full-width[.content-box-purple[
+.bolder[**NOTA**]:
+Galaxy Zoo ejemplifica el potencial de la ciencia ciudadana en la era digital. Lintott et al. (2008) describen cómo este proyecto no solo logró clasificar millones de galaxias, sino que también llevó a descubrimientos inesperados, demostrando cómo la participación masiva puede impulsar avances científicos significativos.
+]]
+
+---
+class: middle left 
+
+### **Reflexiones finales**
+
+- Integración de métodos tradicionales y digitales
+- Importancia de la ética y la calidad metodológica
+- Futuro: IA, realidad virtual, y nuevas fronteras de investigación
+
+---
+
+class: middle left 
+
+.full-width[.content-box-purple[
+.bolder[**NOTA**]:
+El futuro de la investigación social en la era digital requiere una integración cuidadosa de métodos tradicionales y nuevos enfoques. Lazer et al. (2020) enfatizan la importancia de mantener altos estándares éticos y metodológicos mientras se exploran nuevas tecnologías como la IA y la realidad virtual, que prometen abrir nuevas fronteras en la investigación social.
+]]
+
+---
+class: middle left 
+
+### **Referencias**
+
+- Bond, R. M., et al. (2012). A 61-million-person experiment in social influence and political mobilization. Nature, 489(7415), 295-298.
+- Bonney, R., et al. (2016). Can citizen science enhance public understanding of science? Public Understanding of Science, 25(1), 2-16.
+- Couper, M. P. (2017). New developments in survey data collection. Annual Review of Sociology, 43, 121-145.
+- Keusch, F., &amp; Zhang, C. (2017). A review of issues in gamified surveys. Social Science Computer Review, 35(2), 147-166.
+- Kittur, A., et al. (2013). The future of crowd work. Proceedings of the 2013 conference on Computer supported cooperative work, 1301-1318.
+- Kohavi, R., et al. (2020). Online controlled experiments at large scale. Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining, 1437-1446.
+
+---
+class: middle left 
+
+### **Referencias II**
+
+- Kreuter, F., et al. (2020). Social Media and Digital Trace Data in Surveys: Opportunities, Challenges, and Practical Implications. Public Opinion Quarterly, 84(S1), 214-248.
+- Lazer, D. M. J., et al. (2020). Computational social science: Obstacles and opportunities. Science, 369(6507), 1060-1062.
+- Lintott, C. J., et al. (2008). Galaxy Zoo: morphologies derived from visual inspection of galaxies from the Sloan Digital Sky Survey. Monthly Notices of the Royal Astronomical Society, 389(3), 1179-1189.
+- Salganik, M. J. (2019). Bit by bit: Social research in the digital age. Princeton University Press.
+
+---
+class: middle right
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+
+# **Muchas Gracias**
+### **Esta presentación fue realizada con el paquete  [Xaringan](https://slides.yihui.org/xaringan), diseñado para entorno  [R](https://www.r-project.org/)** 
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true,
+"ratio": "16:9",
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
