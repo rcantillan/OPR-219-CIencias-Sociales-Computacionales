@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introducción a las Ciencias Sociales Computacionales</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Roberto Cantillan Carrasco" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <meta name="description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta name="twitter:title" content="Investigación Social en la era digital"/>
+    <meta name="twitter:description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta name="twitter:url" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro"/>
+    <meta name="twitter:image" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro/ciencias-sociales-computacionales.png"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="ricantillan"/>
+    <meta name="twitter:site" content="ricantillan"/>
+    <meta property="og:title" content="Investigación Social en la era digital"/>
+    <meta property="og:description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta property="og:url" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro"/>
+    <meta property="og:image" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro/ciencias-sociales-computacionales.png"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+
+
+
+
+
+class: left title-slide
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+background-position: left
+
+[remarkjs]: https://github.com/gnab/remark
+[remark-wiki]: https://github.com/gnab/remark/wiki
+[xaringan]: https://slides.yihui.org/xaringan/
+[xaringan-wiki]: https://github.com/yihui/xaringan/wiki
+[xaringanthemer]: https://pkg.garrickadenbuie.com/xaringanthemer
+[xaringanExtra]: https://pkg.garrickadenbuie.com/xaringanExtra
+[metathis]: https://pkg.garrickadenbuie.com/metathis
+[ricantillan]: https://twitter.com/ricantillan
+[rbind]: https://ricantillan.rbind.io
+[rsthemes]: https://www.garrickdenbuie.com/projects/rsthemes
+[regexplain]: https://www.garrickdenbuie.com/projects/regexplain
+[shrtcts]: https://pkg.garricakdenbuie.com/shrtcts
+
+
+## **Introducción a las Ciencias Sociales &lt;br&gt; Computacionales &lt;br&gt; Clase V**
+
+.side-text[
+[&amp;commat;ricantillan][ricantillan] | [rcantillan.rbind.io][rbind]
+]
+
+.title-where[
+Universidad Católica del Maule&lt;br&gt;
+Agosto 08, 2024
+]
+
+&lt;style type="text/css"&gt;
+.title-slide h1 {
+  font-size: 80px;
+  font-family: Jost, sans;
+  color: #6A5ACD;  /* Cambio del color del texto a morado */
+}
+
+.side-text {
+  color: #6A5ACD;  /* Cambio del color del texto lateral a morado */
+  transform: rotate(90deg);
+  position: absolute;
+  font-size: 22px;
+  top: 150px;
+  right: -130px;
+}
+
+.side-text a {
+  color: #6A5ACD;  /* Cambio del color de los enlaces a morado */
+}
+
+.title-where {
+  font-family: Jost, sans;
+  font-size: 25px;
+  position: absolute;
+  bottom: 10px;
+  color: #6A5ACD;  /* Cambio del color del texto de ubicación a morado */
+}
+
+/******************
+ * 
+ * Coloured content boxes
+ *
+ ****************/
+
+
+.content-box { 
+    box-sizing: content-box;
+    	background-color: #e2e2e2;
+  /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+     Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+     Content box width: 160px
+     Content box height: 80px */
+}
+
+.content-box-primary,
+.content-box-secondary,
+.content-box-blue,
+.content-box-gray,
+.content-box-grey,
+.content-box-army,
+.content-box-green,
+.content-box-purple,
+.content-box-red,
+.content-box-yellow {
+    /*border-radius: 15px; */
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.content-box-primary {
+	background-color: var(--primary);
+
+}
+
+
+.content-box-secondary {
+	background-color: var(--secondary);
+
+}
+
+.content-box-blue {
+    background-color: #F0F8FF;
+
+}
+
+.content-box-gray {
+    background-color: #e2e2e2;
+}
+
+.content-box-grey {
+	background-color: #F5F5F5;
+}
+
+.content-box-army {
+	background-color: #737a36;
+}
+
+.content-box-green {
+	background-color: #d9edc2;
+}
+
+.content-box-purple {
+	background-color: #e2e2f9;
+}
+
+.content-box-red {
+	background-color: #f9dbdb;
+}
+
+.content-box-yellow {
+	background-color: #fef5c4;
+}
+
+
+.full-width {
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+&lt;/style&gt;
+
+
+
+
+---
+class: middle left 
+ 
+## **Introducción al análisis de contenido digital**
+
+### **¿Qué es el análisis de contenido digital?**
+
+- Método para examinar y extraer significado de textos y datos en línea
+- Aplicable a redes sociales, blogs, foros, noticias digitales, etc.
+- Combina técnicas tradicionales con métodos computacionales
+
+---
+
+class: middle left
+
+
+
+&lt;iframe src="https://www.tidytextmining.com/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+
+[Texto O'REILLY](https://www.tidytextmining.com/)
+
+
+
+
+---
+
+class: middle left
+
+.w-50.fl[
+### 
+
+&lt;img src="screen01.png" width="80%" /&gt;
+
+]
+
+.w-50.fr[
+### 
+
+&lt;img src="screen02.png" width="80%" /&gt;
+
+]
+
+
+---
+class: middle left 
+
+### **Evolución del análisis de contenido**
+
+.full-width[.content-box-purple[
+- De lo analógico a lo digital
+- Mayor escala y velocidad de análisis
+- Nuevas formas de datos: hashtags, emojis, hipertexto
+]]
+
+---
+class: middle left 
+
+### **Principales aplicaciones**
+
+- Análisis de sentimientos
+- Detección de temas emergentes
+- Estudio de dinámicas de difusión de información
+- Análisis de discurso político en línea
+
+---
+
+class: middle left 
+
+## **Potencial del análisis de texto a gran escala**
+
+.full-width[.content-box-purple[
+.bolder[**Ventajas del análisis a gran escala**]:
+- Mayor representatividad y diversidad de datos
+- Detección de patrones sutiles o emergentes
+- Análisis longitudinal y en tiempo real
+- Reducción de sesgos del investigador
+]]
+
+
+---
+
+class: middle left 
+
+### **Casos de estudio**
+
+.panelset[
+.panel[.panel-name[**Política**]
+- Análisis de millones de tweets para predecir resultados electorales
+- Estudio de polarización política en redes sociales
+]
+.panel[.panel-name[**Salud Pública**]
+- Detección temprana de brotes epidémicos mediante búsquedas web
+- Análisis de discusiones en línea sobre vacunas
+]
+.panel[.panel-name[**Mercadotecnia**]
+- Monitoreo de reputación de marca en tiempo real
+- Identificación de tendencias de consumo emergentes
+]
+]
+
+
+---
+
+class: middle left 
+
+## **Herramientas y técnicas**
+
+- Procesamiento de Lenguaje Natural (NLP)
+- Modelado de Tópicos
+- Análisis de Redes
+- Aprendizaje Automático
+
+
+---
+
+class: middle left 
+
+### **Limitaciones del análisis de texto a gran escala**
+
+.full-width[.content-box-purple[
+.bolder[**Desafíos metodológicos**]
+- Representatividad de las muestras en línea
+- Sesgos algorítmicos y de plataforma
+- Dificultad para capturar contexto y significados sutiles
+- Problemas de privacidad y ética
+]]
+
+
+---
+class: middle left 
+
+## **El problema de la "caja negra"**
+
+- Complejidad de los algoritmos de ML
+- Dificultad de interpretación
+- Riesgo de conclusiones espurias
+
+---
+class: middle left 
+
+## **Limitaciones lingüísticas**
+
+- Variabilidad del lenguaje en línea
+- Sarcasmo, ironía y lenguaje figurado
+- Multilingüismo y variaciones dialectales
+
+---
+class: middle left 
+
+## **Consideraciones metodológicas**
+
+.full-width[.content-box-purple[
+.bolder[**Diseño de investigación**]
+- Definición clara de preguntas de investigación
+- Selección adecuada de fuentes de datos
+- Consideración de sesgos potenciales
+- Triangulación con métodos tradicionales
+]]
+
+---
+
+class: middle left 
+
+## **Preprocesamiento de datos**
+
+- Limpieza y normalización de texto
+- Manejo de datos faltantes o ruidosos
+- Tokenización y lematización
+- Eliminación de stop words
+
+---
+class: middle left 
+
+## **Validación y confiabilidad**
+
+- Uso de conjuntos de datos de entrenamiento etiquetados manualmente
+- Evaluación cruzada y pruebas de robustez
+- Interpretación cuidadosa de resultados
+- Transparencia en el reporte de métodos y limitaciones
+
+---
+class: middle left 
+
+## **Conclusiones**
+
+### **El futuro del análisis de contenido digital**
+
+- Integración de métodos cuantitativos y cualitativos
+- Desarrollo de enfoques multimodales (texto, imagen, video)
+- Avances en IA para mejorar la interpretación contextual
+- Mayor énfasis en ética y responsabilidad algorítmica
+
+---
+
+class: middle left 
+
+## **Reflexiones finales**
+
+- El análisis de contenido digital ofrece oportunidades sin precedentes
+- Requiere un enfoque crítico y reflexivo
+- Necesidad de colaboración interdisciplinaria
+- Importancia de la formación continua en métodos computacionales
+
+---
+
+class: middle left 
+
+## **Referencias**
+
+- Bail, C. A. (2014). The cultural environment: Measuring culture with big data. Theory and Society, 43(3-4), 465-482.
+
+- Grimmer, J., &amp; Stewart, B. M. (2013). Text as data: The promise and pitfalls of automatic content analysis methods for political texts. Political Analysis, 21(3), 267-297.
+
+- King, G., Lam, P., &amp; Roberts, M. E. (2017). Computer-assisted keyword and document set discovery from unstructured text. American Journal of Political Science, 61(4), 971-988.
+
+- Lazer, D., &amp; Radford, J. (2017). Data ex machina: Introduction to big data. Annual Review of Sociology, 43, 19-39.
+
+- Silge, J., &amp; Robinson, D. (2017). Text mining with R: A tidy approach. O'Reilly Media.
+
+
+---
+class: middle right
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+
+# **Muchas Gracias**
+### **Esta presentación fue realizada con el paquete  [Xaringan](https://slides.yihui.org/xaringan), diseñado para entorno  [R](https://www.r-project.org/)** 
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true,
+"ratio": "16:9",
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
