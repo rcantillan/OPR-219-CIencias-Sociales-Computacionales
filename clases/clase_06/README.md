@@ -1,5 +1,5 @@
 ---
-title: Clase 5
+title: Clase 6
 subtitle: Introducción a las Ciencas Sociales Computacionales
 date: 2024-08-29
 where: Talca, Chile

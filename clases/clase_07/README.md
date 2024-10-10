@@ -1,10 +1,10 @@
 ---
-title: Clase 5
+title: Clase 7
 subtitle: Introducción a las Ciencas Sociales Computacionales
 date: 2024-08-29
 where: Talca, Chile
 twitter: "@ricantillan"
-web: https://rcantillan.github.io/OPR-219-CIencias-Sociales-Computacionales/clases/clase_06/intro/#1
+web: https://rcantillan.github.io/OPR-219-CIencias-Sociales-Computacionales/clases/clase_07/intro/#1
 ---
 
 ## Packages Used
