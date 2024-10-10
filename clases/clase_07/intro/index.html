@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introducción a las Ciencias Sociales Computacionales</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Roberto Cantillan Carrasco" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <meta name="description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta name="twitter:title" content="Investigación Social en la era digital"/>
+    <meta name="twitter:description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta name="twitter:url" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro"/>
+    <meta name="twitter:image" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro/ciencias-sociales-computacionales.png"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="ricantillan"/>
+    <meta name="twitter:site" content="ricantillan"/>
+    <meta property="og:title" content="Investigación Social en la era digital"/>
+    <meta property="og:description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta property="og:url" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro"/>
+    <meta property="og:image" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro/ciencias-sociales-computacionales.png"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+
+
+
+
+
+class: left title-slide
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+background-position: left
+
+[remarkjs]: https://github.com/gnab/remark
+[remark-wiki]: https://github.com/gnab/remark/wiki
+[xaringan]: https://slides.yihui.org/xaringan/
+[xaringan-wiki]: https://github.com/yihui/xaringan/wiki
+[xaringanthemer]: https://pkg.garrickadenbuie.com/xaringanthemer
+[xaringanExtra]: https://pkg.garrickadenbuie.com/xaringanExtra
+[metathis]: https://pkg.garrickadenbuie.com/metathis
+[ricantillan]: https://twitter.com/ricantillan
+[rbind]: https://ricantillan.rbind.io
+[rsthemes]: https://www.garrickdenbuie.com/projects/rsthemes
+[regexplain]: https://www.garrickdenbuie.com/projects/regexplain
+[shrtcts]: https://pkg.garricakdenbuie.com/shrtcts
+
+
+## **Introducción a las Ciencias Sociales &lt;br&gt; Computacionales &lt;br&gt; Clase VII**
+
+.side-text[
+[&amp;commat;ricantillan][ricantillan] | [rcantillan.rbind.io][rbind]
+]
+
+.title-where[
+Universidad Católica del Maule&lt;br&gt;
+Agosto 08, 2024
+]
+
+&lt;style type="text/css"&gt;
+.title-slide h1 {
+  font-size: 80px;
+  font-family: Jost, sans;
+  color: #6A5ACD;  /* Cambio del color del texto a morado */
+}
+
+.side-text {
+  color: #6A5ACD;  /* Cambio del color del texto lateral a morado */
+  transform: rotate(90deg);
+  position: absolute;
+  font-size: 22px;
+  top: 150px;
+  right: -130px;
+}
+
+.side-text a {
+  color: #6A5ACD;  /* Cambio del color de los enlaces a morado */
+}
+
+.title-where {
+  font-family: Jost, sans;
+  font-size: 25px;
+  position: absolute;
+  bottom: 10px;
+  color: #6A5ACD;  /* Cambio del color del texto de ubicación a morado */
+}
+
+/******************
+ * 
+ * Coloured content boxes
+ *
+ ****************/
+
+
+.content-box { 
+    box-sizing: content-box;
+    	background-color: #e2e2e2;
+  /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+     Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+     Content box width: 160px
+     Content box height: 80px */
+}
+
+.content-box-primary,
+.content-box-secondary,
+.content-box-blue,
+.content-box-gray,
+.content-box-grey,
+.content-box-army,
+.content-box-green,
+.content-box-purple,
+.content-box-red,
+.content-box-yellow {
+    /*border-radius: 15px; */
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.content-box-primary {
+	background-color: var(--primary);
+
+}
+
+
+.content-box-secondary {
+	background-color: var(--secondary);
+
+}
+
+.content-box-blue {
+    background-color: #F0F8FF;
+
+}
+
+.content-box-gray {
+    background-color: #e2e2e2;
+}
+
+.content-box-grey {
+	background-color: #F5F5F5;
+}
+
+.content-box-army {
+	background-color: #737a36;
+}
+
+.content-box-green {
+	background-color: #d9edc2;
+}
+
+.content-box-purple {
+	background-color: #e2e2f9;
+}
+
+.content-box-red {
+	background-color: #f9dbdb;
+}
+
+.content-box-yellow {
+	background-color: #fef5c4;
+}
+
+
+.full-width {
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+&lt;/style&gt;
+
+
+
+
+---
+class: left middle
+
+### **Introducción conceptual al aprendizaje automático**
+
+- El aprendizaje automático (machine learning) se refiere a algoritmos y modelos estadísticos que las computadoras usan para realizar tareas sin instrucciones explícitas, basándose en patrones e inferencia.
+
+- Tipos principales:
+  - **Aprendizaje supervisado** 
+  - **Aprendizaje no supervisado**
+  - **Aprendizaje por refuerzo**
+
+- Proviene de la intersección entre la estadística, la ciencia de la computación y el conocimiento del dominio específico.
+
+---
+
+class: middle left
+
+.full-width[.content-box-purple[
+.bolder[**Aprendizaje automático**]
+El aprendizaje automático representa un cambio de paradigma en cómo abordamos el análisis de datos en ciencias sociales, permitiendo descubrir patrones complejos en grandes volúmenes de información.
+
+]]
+
+---
+
+class: middle left
+
+
+&lt;img src="screen03.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: middle left 
+
+### **1. Supervised Machine Learning (SML)**
+
+- **Objetivo**: Predicción `\((Ŷ)\)` basada en inputs `\((X)\)`
+- Equilibra ajuste dentro y fuera de la muestra
+- Usa regularización para evitar sobreajuste
+
+- **Aplicaciones**:
+  - Predicciones para políticas públicas
+  - Mejora de inferencia causal
+  - Identificación de efectos de tratamiento heterogéneos
+
+---
+
+class: middle left
+
+.full-width[.content-box-purple[
+.bolder[**SML**]
+SML se enfoca en predecir un resultado basado en datos de entrenamiento. Utiliza técnicas como regularización para evitar el sobreajuste y busca un equilibrio entre el ajuste dentro de la muestra y la capacidad de generalización.
+
+]]
+
+
+---
+
+class: middle left
+
+
+### **2. Unsupervised Machine Learning (UML)**
+
+- **Objetivo**: Descubrir estructuras en los datos
+- No hay variable objetivo predefinida
+
+- **Técnicas**:
+  - Análisis de componentes principales
+  - Análisis de conglomerados
+  - Modelado de tópicos
+  
+- **Aplicaciones**:
+  - Caracterización de heterogeneidad poblacional
+  - Descubrimiento de patrones latentes
+
+---
+
+class: middle left
+
+.full-width[.content-box-purple[
+.bolder[**UML**]
+UML busca encontrar patrones o estructuras en los datos sin una variable objetivo específica. Es útil para descubrir grupos o relaciones no evidentes en los datos.
+
+]]
+
+
+---
+
+class: middle left
+
+## **3. Mejora de Métodos Estadísticos Tradicionales**
+
+- Complementa enfoques estadísticos clásicos
+- Permite considerar más variables y relaciones complejas
+- Ayuda a superar limitaciones del modelado lineal
+- Facilita la exploración de datos y generación de hipótesis
+
+---
+
+class: middle left
+
+.full-width[.content-box-purple[
+.bolder[**Aprendizaje automático**]
+El aprendizaje automático puede mejorar los métodos estadísticos tradicionales al permitir el análisis de relaciones más complejas y un mayor número de variables.
+
+]]
+
+
+---
+
+class: middle left
+
+## **4. Aplicaciones en Sociología**
+
+- Predicciones para políticas públicas / predicción de comportamientos y outcomes sociales
+- Refinamiento de métodos de inferencia causal
+- Caracterización de heterogeneidad poblacional / Segmentación de poblaciones
+- Exploración y descubrimiento de patrones en datos / Detección de patrones en redes sociales 
+- Clasificación de textos y análisis de sentimientos / Análisis de nuevas fuentes de datos (texto, imágenes)
+- Reconocimiento de imágenes en estudios culturales
+
+
+---
+
+class: middle, center
+
+## **Ejemplos**
+
+
+---
+
+
+class: left middle
+
+### **Ejemplo: Predicción de movilidad social**
+
+Chetty et al. (2020) utilizaron técnicas de aprendizaje automático para predecir la movilidad económica intergeneracional en EE.UU.:
+
+- Datos: Registros fiscales de millones de familias
+- Métodos: Árboles de decisión, bosques aleatorios, redes neuronales
+- Hallazgos: Identificaron factores predictivos clave como segregación racial y calidad escolar
+
+
+---
+
+class: middle left
+
+.full-width[.content-box-purple[
+.bolder[**Sin precedentes**]
+Este estudio demuestra el potencial del aprendizaje automático para abordar preguntas sociológicas fundamentales a una escala sin precedentes.
+]]
+
+
+---
+
+class: middle left
+
+&lt;iframe src="https://opportunityatlas.org/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+
+[web](https://opportunityatlas.org/)
+
+
+
+---
+
+class: middle left 
+
+.w-50.fl[
+&lt;img src="screen01.png" width="70%" style="display: block; margin: auto;" /&gt;
+]
+
+.w-50.fr[
+### 
+
+&lt;img src="screen02.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.footnote[
+[1] Chetty, R., Jackson, M. O., Kuchler, T., Stroebel, J., Hendren, N., Fluegge, R. B., Gong, S., Gonzalez, F., Grondin, A., Jacob, M., Johnston, D., Koenen, M., Laguna-Muggenburg, E., Mudekereza, F., Rutter, T., Thor, N., Townsend, W., Zhang, R., Bailey, M., … Wernerfelt, N. (2022). Social capital I: Measurement and associations with economic mobility. Nature, 608(7921), 108–121. https://doi.org/10.1038/s41586-022-04996-4
+
+[2] Chetty, R., Jackson, M. O., Kuchler, T., Stroebel, J., Hendren, N., Fluegge, R. B., Gong, S., Gonzalez, F., Grondin, A., Jacob, M., Johnston, D., Koenen, M., Laguna-Muggenburg, E., Mudekereza, F., Rutter, T., Thor, N., Townsend, W., Zhang, R., Bailey, M., … Wernerfelt, N. (2022). Social capital II: Determinants of economic connectedness. Nature, 608(7921), 122–134. https://doi.org/10.1038/s41586-022-04997-3
+
+]
+
+
+
+---
+
+class: middle left
+
+&lt;iframe src="https://www.socialcapital.org/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+
+[web](https://www.socialcapital.org/)
+
+
+
+
+---
+
+class: left middle
+
+### **Desafíos éticos**
+
+1. Sesgo y equidad algorítmica
+2. Privacidad y consentimiento informado
+3. Interpretabilidad de modelos "caja negra"
+4. Reproducibilidad de resultados
+5. Impacto social de los sistemas automatizados
+
+---
+
+class: middle left
+
+### **Consideraciones metodológicas**
+
+- Integración con teoría social:
+  - El aprendizaje automático no debe reemplazar, sino complementar la teoría
+  - Importancia de la validación cruzada entre métodos cuantitativos y cualitativos
+
+- Transparencia y explicabilidad:
+  - Documentar detalladamente los procesos de recolección y preprocesamiento de datos
+  - Utilizar técnicas de interpretación de modelos como SHAP values
+
+
+---
+
+class: left middle
+
+## **Perspectivas futuras**
+
+- Desarrollo de métodos específicos para ciencias sociales
+- Mayor énfasis en causalidad y no solo correlación
+- Integración de datos heterogéneos (texto, imágenes, redes)
+- Colaboraciones interdisciplinarias más estrechas
+- Formación especializada para científicos sociales
+
+
+---
+class: middle right
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+
+# **Muchas Gracias**
+### **Esta presentación fue realizada con el paquete  [Xaringan](https://slides.yihui.org/xaringan), diseñado para entorno  [R](https://www.r-project.org/)** 
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true,
+"ratio": "16:9",
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
