@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introducción a las Ciencias Sociales Computacionales</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Roberto Cantillan Carrasco" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <meta name="description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta name="twitter:title" content="Investigación Social en la era digital"/>
+    <meta name="twitter:description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta name="twitter:url" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro"/>
+    <meta name="twitter:image" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro/ciencias-sociales-computacionales.png"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="ricantillan"/>
+    <meta name="twitter:site" content="ricantillan"/>
+    <meta property="og:title" content="Investigación Social en la era digital"/>
+    <meta property="og:description" content="Investigación Social en la era digital, Universidad Católica del Maule, Agosto 01, 2023"/>
+    <meta property="og:url" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro"/>
+    <meta property="og:image" content="https://github.com/rcantillan/slides/tree/main/ciencias-sociales-computacionales/intro/ciencias-sociales-computacionales.png"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+
+
+
+
+
+class: left title-slide
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+background-position: left
+
+[remarkjs]: https://github.com/gnab/remark
+[remark-wiki]: https://github.com/gnab/remark/wiki
+[xaringan]: https://slides.yihui.org/xaringan/
+[xaringan-wiki]: https://github.com/yihui/xaringan/wiki
+[xaringanthemer]: https://pkg.garrickadenbuie.com/xaringanthemer
+[xaringanExtra]: https://pkg.garrickadenbuie.com/xaringanExtra
+[metathis]: https://pkg.garrickadenbuie.com/metathis
+[ricantillan]: https://twitter.com/ricantillan
+[rbind]: https://ricantillan.rbind.io
+[rsthemes]: https://www.garrickdenbuie.com/projects/rsthemes
+[regexplain]: https://www.garrickdenbuie.com/projects/regexplain
+[shrtcts]: https://pkg.garricakdenbuie.com/shrtcts
+
+
+## **Introducción a las Ciencias Sociales &lt;br&gt; Computacionales &lt;br&gt; Clase VIII**
+
+.side-text[
+[&amp;commat;ricantillan][ricantillan] | [rcantillan.rbind.io][rbind]
+]
+
+.title-where[
+Universidad Católica del Maule&lt;br&gt;
+Octubre 17, 2024
+]
+
+&lt;style type="text/css"&gt;
+.title-slide h1 {
+  font-size: 80px;
+  font-family: Jost, sans;
+  color: #6A5ACD;  /* Cambio del color del texto a morado */
+}
+
+.side-text {
+  color: #6A5ACD;  /* Cambio del color del texto lateral a morado */
+  transform: rotate(90deg);
+  position: absolute;
+  font-size: 22px;
+  top: 150px;
+  right: -130px;
+}
+
+.side-text a {
+  color: #6A5ACD;  /* Cambio del color de los enlaces a morado */
+}
+
+.title-where {
+  font-family: Jost, sans;
+  font-size: 25px;
+  position: absolute;
+  bottom: 10px;
+  color: #6A5ACD;  /* Cambio del color del texto de ubicación a morado */
+}
+
+/******************
+ * 
+ * Coloured content boxes
+ *
+ ****************/
+
+
+.content-box { 
+    box-sizing: content-box;
+    	background-color: #e2e2e2;
+  /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+     Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+     Content box width: 160px
+     Content box height: 80px */
+}
+
+.content-box-primary,
+.content-box-secondary,
+.content-box-blue,
+.content-box-gray,
+.content-box-grey,
+.content-box-army,
+.content-box-green,
+.content-box-purple,
+.content-box-red,
+.content-box-yellow {
+    /*border-radius: 15px; */
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.content-box-primary {
+	background-color: var(--primary);
+
+}
+
+
+.content-box-secondary {
+	background-color: var(--secondary);
+
+}
+
+.content-box-blue {
+    background-color: #F0F8FF;
+
+}
+
+.content-box-gray {
+    background-color: #e2e2e2;
+}
+
+.content-box-grey {
+	background-color: #F5F5F5;
+}
+
+.content-box-army {
+	background-color: #737a36;
+}
+
+.content-box-green {
+	background-color: #d9edc2;
+}
+
+.content-box-purple {
+	background-color: #e2e2f9;
+}
+
+.content-box-red {
+	background-color: #f9dbdb;
+}
+
+.content-box-yellow {
+	background-color: #fef5c4;
+}
+
+
+.full-width {
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+&lt;/style&gt;
+
+
+
+
+&lt;style&gt;
+.reveal .sourceCode {
+  font-size: 0.7em;  /* Ajusta este valor según necesites */
+}
+&lt;/style&gt;
+
+
+---
+class: middle left
+
+
+### **Objetivos de la semana**
+
+- Comprender los principios de visualización efectiva de datos
+- Aprender técnicas de narrativa de datos para presentar resultados de investigación
+- Reflexionar sobre la ética en la visualización y comunicación de datos
+
+---
+class: middle left
+
+### **Principios de Visualización Efectiva de Datos I**
+
+.panelset[
+.panel[.panel-name[**Claridad y simplicidad**]
+
+- Evitar el "chartjunk" (Tufte, 1983)
+- Mantener una relación datos-tinta alta
+
+]
+.panel[.panel-name[**Elecccion apropiada del tipo**]
+
+- Gráficos de barras para comparaciones categóricas
+- Gráficos de líneas para tendencias temporales
+- Diagramas de dispersión para relaciones entre variables
+
+]
+
+.panel[.panel-name[**Uso efectivo del color**]
+
+- Utilizar paletas de colores coherentes y accesibles
+- El color debe añadir información, no distraer
+]
+]
+
+---
+
+class: middle left
+
+### **Principios de Visualización Efectiva de Datos II**
+
+.panelset[
+.panel[.panel-name[**Escalas y ejes adecuados**]
+
+- Comenzar los ejes en cero cuando sea apropiado
+- Usar escalas consistentes para comparaciones justas
+
+]
+
+.panel[.panel-name[**Contextualización de los datos**]
+
+- Proporcionar leyendas claras y etiquetas informativas
+- Incluir notas explicativas cuando sea necesario
+
+]
+
+.panel[.panel-name[**Diseño responsivo**]
+
+- Considerar cómo se verá la visualización en diferentes dispositivos
+
+]
+]
+
+---
+
+
+class: middle left
+
+### **Comparación de Visualizaciones** 
+
+.pull-left[
+#### **Gráfico Sobrecargado**
+
+
+``` r
+library(ggplot2)
+set.seed(123)
+datos &lt;- data.frame(
+  año = 2010:2020,
+  tasa_pobreza = c(25, 23, 22, 20, 19, 18, 17, 16, 15, 14, 13) + rnorm(11, 0, 0.5)
+)
+
+ggplot(datos, aes(x = año, y = tasa_pobreza)) +
+  geom_line(color = "red", size = 2) +
+  geom_point(color = "blue", size = 4) +
+  theme_minimal() +
+  labs(title = "Evolución de la Tasa de Pobreza",
+       subtitle = "Un ejemplo de gráfico sobrecargado",
+       x = "Año", y = "Tasa de Pobreza (%)")
+```
+]
+
+.pull-right[
+![](index_files/figure-html/unnamed-chunk-3-1.png)&lt;!-- --&gt;
+]
+
+---
+
+class: middle left
+
+### **Comparación de Visualizaciones** 
+
+.pull-left[
+#### **Gráfico Efectivo**
+
+
+``` r
+ggplot(datos, aes(x = año, y = tasa_pobreza)) +
+  geom_line(color = "steelblue", size = 1) +
+  geom_point(color = "steelblue", size = 2) +
+  theme_minimal() +
+  labs(title = "Evolución de la Tasa de Pobreza (2010-2020)",
+       x = "Año", y = "Tasa de Pobreza (%)")
+```
+]
+
+.pull-right[
+![](index_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
+]
+
+---
+
+class: middle left
+
+
+
+### **Narrativa de Datos**
+
+.panelset[
+.panel[.panel-name[**¿Qué es la narrativa de datos?**]
+
+- Técnica para presentar hallazgos de manera convincente y memorable
+- Combina visualización de datos con storytelling
+
+]
+
+.panel[.panel-name[**Elementos clave**]
+
+- **Contexto**: Establecer el escenario y la importancia del tema
+- **Desafío**: Presentar el problema o pregunta de investigación
+- **Viaje**: Guiar al público a través de los datos y hallazgos
+- **Resolución**: Concluir con insights y posibles acciones
+
+]
+]
+
+---
+
+class: middle left 
+
+### **Ejemplo de Narrativa: Desigualdad Socioeconómica**
+
+
+.pull-left[
+#### **1. Contexto**
+
+- Creciente brecha entre ricos y pobres
+- Impacto en la cohesión social
+
+#### **2. Desafío**
+
+- ¿Cómo ha evolucionado la desigualdad en las últimas décadas?
+- ¿Qué factores contribuyen a esta tendencia?
+]
+
+.pull-right[
+#### **3. Viaje**
+
+- Mostrar tendencias del coeficiente de Gini
+- Desglosar por grupos demográficos
+- Analizar factores como educación y empleo
+
+#### **4. Resolución**
+
+- Resumen de hallazgos clave
+- Implicaciones para políticas públicas
+]
+
+---
+
+class: middle left
+
+### **Narrativa de Datos: Desigualdad**
+
+.pull-left[
+
+``` r
+library(ggplot2)
+library(dplyr)
+library(scales)
+
+# Crear datos más realistas
+set.seed(456)
+datos_desigualdad &lt;- data.frame(
+  año = rep(2000:2020, each = 3),
+  grupo = rep(c("Bajo", "Medio", "Alto"), 21)
+) %&gt;%
+  group_by(grupo) %&gt;%
+  mutate(
+    ingreso = case_when(
+      grupo == "Bajo" ~ cumsum(rnorm(21, 100, 50)) + 10000,
+      grupo == "Medio" ~ cumsum(rnorm(21, 300, 100)) + 30000,
+      grupo == "Alto" ~ cumsum(rnorm(21, 1000, 500)) + 80000
+    )
+  ) %&gt;%
+  ungroup()
+
+# Crear el gráfico mejorado
+ggplot(datos_desigualdad, aes(x = año, y = ingreso, color = grupo)) +
+  geom_line(size = 1.2) +
+  geom_point(size = 2) +
+  scale_y_continuous(labels = scales::dollar_format(prefix = "$", big.mark = ",")) +
+  scale_color_brewer(palette = "Set2") +
+  theme_minimal(base_size = 14) +
+  theme(
+    legend.position = "bottom",
+    panel.grid.minor = element_blank(),
+    plot.title = element_text(face = "bold", size = 16),
+    plot.subtitle = element_text(size = 12, color = "gray50")
+  ) +
+  labs(
+    title = "Evolución de Ingresos por Grupo Socioeconómico",
+    subtitle = "Crecimiento desigual entre 2000 y 2020",
+    x = "Año",
+    y = "Ingreso Promedio Anual",
+    color = "Grupo Socioeconómico"
+  ) +
+  annotate("text", x = 2020, y = max(datos_desigualdad$ingreso), 
+           label = "Brecha creciente", hjust = 1, vjust = 1, color = "red", fontface = "italic")
+```
+]
+
+.pull-right[
+![](index_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+
+]
+
+
+---
+
+class: middle left 
+
+### **Narrativa de Datos en Sociología** 
+
+
+.panelset[
+.panel[.panel-name[**Importancia**]
+
+
+- Facilita la comprensión de fenómenos sociales complejos
+- Ayuda a comunicar hallazgos a audiencias diversas
+
+]
+
+.panel[.panel-name[**Aplicaciones específicas**]
+
+
+- Análisis de movilidad social (¿cómo?)
+- Estudios de segregación urbana 
+- Investigaciones sobre desigualdad de género
+
+]
+
+.panel[.panel-name[**Técnicas avanzadas**]
+
+
+- Uso de visualizaciones interactivas
+- Integración de datos cualitativos y cuantitativos
+- Narrativas basadas en análisis de redes sociales
+
+]
+]
+
+
+---
+
+class: middle left 
+
+### **Ética en la Visualización y Comunicación de Datos**
+
+.panelset[
+.panel[.panel-name[**Veracidad**]
+
+- Revelar fuentes de datos y metodología
+- Reconocer limitaciones y sesgos potenciales
+
+]
+
+.panel[.panel-name[**Transparencia**]
+
+
+- Análisis de movilidad social (¿cómo?)
+- Estudios de segregación urbana 
+- Investigaciones sobre desigualdad de género
+
+]
+
+.panel[.panel-name[**Privacidad y consentimiento**]
+
+- Proteger la identidad de los participantes
+- Obtener permiso para usar y compartir datos
+
+]
+]
+
+---
+
+class: middle left
+
+### **Ética en la Visualización y Comunicación de Datos II**
+
+.panelset[
+.panel[.panel-name[**Inclusividad**]
+
+- Considerar la accesibilidad (ej. daltonismo)
+- Evitar estereotipos o sesgos en representaciones
+
+]
+
+.panel[.panel-name[**Responsabilidad social**]
+
+- Reflexionar sobre el impacto potencial de las visualizaciones
+- Evitar reforzar desigualdades o estigmas
+
+]
+
+.panel[.panel-name[**Integridad científica**]
+
+- No seleccionar datos convenientemente ("cherry-picking")
+- Estar abierto a la revisión y crítica
+
+]
+]
+
+---
+
+class: middle left
+
+### **Representación Engañosa**
+
+.pull-left[
+
+
+``` r
+set.seed(789)
+datos_covid &lt;- data.frame(
+  país = c("País A", "País B", "País C", "País D"),
+  casos_totales = c(1000000, 500000, 100000, 50000),
+  población = c(100000000, 10000000, 5000000, 1000000)
+)
+
+datos_covid &lt;- datos_covid %&gt;%
+  mutate(casos_por_millón = casos_totales / población * 1000000)
+
+ggplot(datos_covid, aes(x = país, y = casos_totales)) +
+  geom_col(fill = "red") +
+  theme_minimal() +
+  labs(title = "Casos Totales de COVID-19 por País",
+       x = "País", y = "Casos Totales")
+```
+
+]
+
+.pull-right[
+![](index_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+]
+
+---
+
+class: middle left 
+
+### **Representación ética**
+
+.pull-left[
+
+``` r
+ggplot(datos_covid, aes(x = país, y = casos_por_millón)) +
+  geom_col(fill = "steelblue") +
+  theme_minimal() +
+  labs(title = "Casos de COVID-19 por Millón de Habitantes",
+       x = "País", y = "Casos por Millón")
+```
+
+]
+
+.pull-right[
+![](index_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
+]
+
+---
+
+class: middle left 
+
+### **Ética en la Era de Big Data**
+
+.panelset[
+.panel[.panel-name[**Desafíos emergentes**]
+
+- Sesgos algorítmicos en la recolección y análisis de datos
+- Privacidad en la era de la hiperconectividad
+- Impacto social de las decisiones basadas en datos
+
+]
+
+.panel[.panel-name[**Consideraciones**]
+
+- Evaluación crítica de fuentes de datos y métodos de análisis
+- Reflexión sobre las implicaciones éticas de los hallazgos
+- Desarrollo de marcos éticos para la investigación social digital
+
+]
+
+.panel[.panel-name[**Buenas prácticas**]
+
+- Auditorías de algoritmos y modelos predictivos
+- Transparencia en la metodología y limitaciones del estudio
+- Colaboración interdisciplinaria para abordar dilemas éticos
+
+]
+]
+
+
+---
+
+class: middle left 
+
+### **Otro ejemplo de ética**
+
+
+.pull-left[
+
+``` r
+library(ggplot2);library(dplyr);library(scales)
+library(gridExtra) # Para combinar gráficos
+
+set.seed(123)
+datos_covid &lt;- data.frame(
+  pais = c("A","B","C","D"),
+  poblacion = c(100,50,200,80),
+  casos = c(5000,3000,8000,2000),
+  muertes = c(250,180,400,120),
+  pruebas = c(50000,20000,100000,30000)
+) %&gt;% mutate(
+  casos_per_cap = casos/poblacion*100000,
+  muertes_per_cap = muertes/poblacion*100000,
+  tasa_positividad = casos/pruebas*100,
+  ic_inferior = casos_per_cap*0.9,
+  ic_superior = casos_per_cap*1.1
+)
+
+# Gráfico potencialmente engañoso
+g1 &lt;- ggplot(datos_covid, aes(x=reorder(pais,-casos), y=casos)) +
+  geom_col(fill="red") +
+  labs(title="Casos Totales de COVID-19 por País",
+       x="País", y="Número de Casos") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=45, hjust=1))
+```
+
+]
+
+.pull-right[
+![](index_files/figure-html/unnamed-chunk-13-1.png)&lt;!-- --&gt;
+
+]
+
+---
+
+class: middle left
+
+### **Otro ejemplo de ética II**
+
+
+.pull-left[
+
+``` r
+# Gráfico ético
+g2 &lt;- ggplot(datos_covid, aes(x=reorder(pais,-casos_per_cap), 
+                              y=casos_per_cap)) +
+  geom_col(fill="steelblue") +
+  geom_errorbar(aes(ymin=ic_inferior, ymax=ic_superior), 
+                width=0.2) +
+  geom_text(aes(label=sprintf("%.1f%%", tasa_positividad)),
+            vjust=-0.5, size=3) +
+  scale_y_continuous(labels=comma) +
+  labs(title="Casos COVID-19 por 100,000 habitantes",
+       subtitle="Con intervalos de confianza y tasa de positividad",
+       x="País", y="Casos por 100,000 habitantes") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=45, hjust=1))
+```
+
+]
+
+.pull-right[
+![](index_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
+
+]
+
+---
+
+class: middle left
+
+### **Que represneta cada gráfico** 
+
+- El gráfico `g1` muestra una representación potencialmente engañosa, utilizando números absolutos de casos sin contexto.
+
+- El gráfico de la derecha `g2` es una representación más ética, que:
+
+  - Usa tasas per cápita
+  - Incluye intervalos de confianza para mostrar la incertidumbre
+  - Muestra la tasa de positividad para contextualizar las diferencias en pruebas
+  - Usa un color menos alarmista
+
+---
+
+class: middle left
+
+### **Otro ejemplo, basado en redes**
+
+.pull-left[
+
+``` r
+library(igraph)
+library(ggraph)
+library(tidygraph)
+library(dplyr)
+
+# Crear datos simulados de red
+set.seed(123)
+n_personas &lt;- 50
+conexiones &lt;- matrix(sample(0:1, n_personas^2, replace=TRUE, prob=c(0.95, 0.05)), nrow=n_personas)
+diag(conexiones) &lt;- 0
+red &lt;- graph_from_adjacency_matrix(conexiones, mode="undirected")
+
+# Simular infección
+V(red)$infectado &lt;- sample(c(TRUE, FALSE), n_personas, replace=TRUE, prob=c(0.2, 0.8))
+V(red)$tiempo_infeccion &lt;- ifelse(V(red)$infectado, sample(1:14, sum(V(red)$infectado), replace=TRUE), NA)
+
+# Crear gráfico no ético
+g1 &lt;- ggraph(red, layout = "fr") +
+  geom_edge_link(alpha=0.2) +
+  geom_node_point(aes(color=infectado), size=5) +
+  scale_color_manual(values=c("TRUE"="red", "FALSE"="green")) +
+  theme_void() +
+  labs(title="Visualización No Ética de Propagación COVID-19",
+       subtitle="Rojo: Infectado, Verde: No Infectado")
+
+# Crear gráfico ético
+red_tidy &lt;- as_tbl_graph(red) %&gt;%
+  activate(nodes) %&gt;%
+  mutate(estado = case_when(
+    is.na(tiempo_infeccion) ~ "No Infectado",
+    tiempo_infeccion &lt;= 7 ~ "Infectado (1-7 días)",
+    tiempo_infeccion &gt; 7 ~ "Infectado (8-14 días)"
+  ))
+
+g2 &lt;- ggraph(red_tidy, layout = "fr") +
+  geom_edge_link(alpha=0.2) +
+  geom_node_point(aes(color=estado), size=5) +
+  scale_color_manual(values=c(
+    "No Infectado"="gray",
+    "Infectado (1-7 días)"="orange",
+    "Infectado (8-14 días)"="red"
+  )) +
+  theme_void() +
+  labs(title="Visualización Ética de Propagación COVID-19",
+       subtitle="Gris: No Infectado, Naranja: 1-7 días, Rojo: 8-14 días") +
+  theme(legend.position="bottom")
+```
+
+]
+
+.pull-right[
+![](index_files/figure-html/unnamed-chunk-17-1.png)&lt;!-- --&gt;
+]
+
+---
+
+class: middle left
+
+### **Otro ejemplo, basado en redes**
+
+.pull-left[
+
+``` r
+# Crear gráfico ético
+red_tidy &lt;- as_tbl_graph(red) %&gt;%
+  activate(nodes) %&gt;%
+  mutate(estado = case_when(
+    is.na(tiempo_infeccion) ~ "No Infectado",
+    tiempo_infeccion &lt;= 7 ~ "Infectado (1-7 días)",
+    tiempo_infeccion &gt; 7 ~ "Infectado (8-14 días)"
+  ))
+
+g2 &lt;- ggraph(red_tidy, layout = "fr") +
+  geom_edge_link(alpha=0.2) +
+  geom_node_point(aes(color=estado), size=5) +
+  scale_color_manual(values=c(
+    "No Infectado"="gray",
+    "Infectado (1-7 días)"="orange",
+    "Infectado (8-14 días)"="red"
+  )) +
+  theme_void() +
+  labs(title="Visualización Ética de Propagación COVID-19",
+       subtitle="Gris: No Infectado, Naranja: 1-7 días, Rojo: 8-14 días") +
+  theme(legend.position="bottom")
+```
+]
+
+
+.pull-richt[
+![](index_files/figure-html/unnamed-chunk-19-1.png)&lt;!-- --&gt;
+]
+
+
+---
+
+class: middle left 
+
+### **Referencias**
+
+- Cairo, A. (2016). The truthful art: Data, charts, and maps for communication. New Riders.
+- Knaflic, C. N. (2015). Storytelling with data: A data visualization guide for business professionals. John Wiley &amp; Sons.
+- Tufte, E. R. (1983). The visual display of quantitative information. Graphics Press.
+- Yau, N. (2013). Data points: Visualization that means something. John Wiley &amp; Sons.
+- D'Ignazio, C., &amp; Klein, L. F. (2020). Data feminism. MIT Press.
+- Lupi, G., &amp; Posavec, S. (2016). Dear data. Princeton Architectural Press.
+
+
+---
+class: middle right
+background-image: url('d-koi-GQJY4UPR21U-unsplash.jpg')
+background-size: cover
+
+# **Muchas Gracias**
+### **Esta presentación fue realizada con el paquete  [Xaringan](https://slides.yihui.org/xaringan), diseñado para entorno  [R](https://www.r-project.org/)** 
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true,
+"ratio": "16:9",
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
