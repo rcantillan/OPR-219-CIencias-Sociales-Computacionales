@@ -1031,7 +1031,7 @@ g2 <- ggraph(red_tidy, layout = "fr") +
 ]
 
 
-.pull-richt[
+.pull-right[
 ```{r echo=FALSE}
 g2
 ```
